@@ -9,6 +9,7 @@ import Kee from '../../images/kee.png'
 
 import { useInView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 const Clients = () => {
   const [visible, setVisible] = useState(false)
@@ -55,6 +56,9 @@ const Clients = () => {
                 </p>
               </div>
             </div>
+            <Link className={`button ${styles.clientButton}`} href='/clients'>
+              Learn more
+            </Link>
           </motion.div>
         )}
         <div className={`${styles.right} ${styles.animateRight}`}>
