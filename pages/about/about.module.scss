@@ -57,7 +57,12 @@
     margin: 4rem auto;
     text-align: justify;
     border: 1px solid $secondary-color;
-
+    @media screen and (max-width: 768px) {
+      border-top: 1px solid $secondary-color;
+      border-bottom: 1px solid $secondary-color;
+      border-left: none;
+      border-right: none;
+    }
     font-size: 18px;
     font-weight: 500;
     line-height: 29px;

@@ -16,7 +16,7 @@ const About = () => {
       // wait for 4 seconds before setting done to true
       setTimeout(() => {
         setDone(true)
-      }, 2000)
+      }, 1000)
     },
   })
 
@@ -55,6 +55,7 @@ const About = () => {
               transition={{ duration: 2 }}
             >
               <Image
+                loading='eager'
                 src={done ? member?.image : Logo}
                 alt={'Logo'}
                 fill={done ? true : false}
