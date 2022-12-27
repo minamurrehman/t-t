@@ -1,0 +1,14 @@
+$primary-color: #171717;
+$secondary-color: #03eeca;
+
+// ============ Mixins ============
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// ============ Media Queries ============
+$breakpoint-mobile: 600px;
+$breakpoint-tablet: 900px;
+$breakpoint-desktop: 1200px;

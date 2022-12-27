@@ -1,0 +1,110 @@
+@import 'variables';
+
+.aboutWrapper {
+  & > div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @keyframes left {
+      0% {
+        width: 100%;
+      }
+    }
+
+    & > :nth-child(1) {
+      position: relative;
+      bottom: -8rem;
+      height: 1px;
+      width: 100%;
+      background-color: $secondary-color;
+      & > span {
+        display: block;
+        width: 0;
+        height: 1px;
+        background-color: $primary-color;
+        animation-name: left;
+        animation-duration: 2s;
+      }
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+    & > :nth-child(3) {
+      position: relative;
+      top: -8rem;
+      height: 1px;
+      background-color: $primary-color;
+      width: 100%;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+      & > span {
+        display: block;
+        width: 0;
+        height: 1px;
+        background-color: $secondary-color;
+        animation-name: left;
+        animation-duration: 2s;
+        animation-direction: reverse;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+  .aboutPara {
+    max-width: 700px;
+    padding: 2em 4em;
+    margin: 4rem auto;
+    text-align: justify;
+    border: 1px solid $secondary-color;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0.04em;
+  }
+
+  .teamWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 3rem auto;
+    flex-wrap: wrap;
+    max-width: 1500px;
+
+    .teamCard {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      text-align: center;
+      max-width: 250px;
+      & > div:nth-child(1) {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $secondary-color;
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        gap: 4rem;
+      }
+      .teamInfo {
+        & > p:nth-child(1) {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 32px;
+          letter-spacing: 0.04em;
+        }
+        & > p:nth-child(2) {
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 32px;
+          letter-spacing: 0.04em;
+        }
+      }
+    }
+  }
+}

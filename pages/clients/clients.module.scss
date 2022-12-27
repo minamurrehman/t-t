@@ -1,0 +1,44 @@
+.clientInfo {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 4rem auto;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    border: none;
+  }
+
+  & > * {
+    max-width: 530px;
+    text-align: justify;
+  }
+
+  & > :nth-child(1) > :nth-child(1) {
+    width: 160px;
+    height: 150px;
+    display: block;
+    margin: 1rem auto;
+  }
+  & > :nth-child(2) {
+    margin-top: 4rem;
+  }
+  & > :nth-child(2) > :nth-child(1) {
+    width: 100%;
+    max-width: 100%;
+    height: 80px;
+    display: block;
+    margin: 1rem auto;
+  }
+
+  .btn {
+    max-width: max-content;
+    padding: 0.5rem 2rem;
+    margin: 3rem auto;
+  }
+}

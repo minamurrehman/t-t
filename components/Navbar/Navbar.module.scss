@@ -1,0 +1,107 @@
+// add gloal variable to the top of the file
+@import 'variables';
+
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: $primary-color;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .topRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+  }
+  .navMenus {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    & > a {
+      color: #fff;
+      font-weight: 500;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 1rem 0;
+      width: 100%;
+      text-align: center;
+      border-top: 3px solid $secondary-color;
+    }
+    :last-child {
+      border-bottom: 3px solid $secondary-color;
+    }
+  }
+  .mobileSocial {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    a {
+      color: $primary-color;
+    }
+    & > div {
+      display: flex;
+      gap: 1.5rem;
+    }
+  }
+}
+
+.nav {
+  background-color: $primary-color;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1500px;
+  margin: 0 auto;
+  align-items: center;
+
+  .hamburger {
+    display: none;
+    @media screen and (max-width: 768px) {
+      display: block;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+  .nav_links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+
+    & > a {
+      color: #fff;
+      font-weight: 500;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    .active {
+      border-bottom: 2px solid $secondary-color;
+    }
+  }
+  .social {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    a {
+      color: $primary-color;
+    }
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+}

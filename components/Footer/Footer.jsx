@@ -1,0 +1,36 @@
+import Link from 'next/link'
+import React from 'react'
+import styles from './Footer.module.scss'
+
+const Footer = () => {
+  return (
+    <footer className={styles.footer}>
+      <div className={styles.footerInner}>
+        <div>
+          <p>T & T Marketing</p>
+          <ul>
+            <Link href='/about'>About Us</Link>
+            <Link href='/clients'>Our Clients</Link>
+          </ul>
+        </div>
+        <div>
+          <p>Contact Us</p>
+          <ul>
+            <Link href='/email'>Send an e-mail</Link>
+            <Link href='/clients'>Book a Meeting</Link>
+          </ul>
+        </div>
+        <div>
+          <p>Social</p>
+          <ul>
+            <Link href='/'>Instagram</Link>
+            <Link href='/'>Linkedin</Link>
+          </ul>
+        </div>
+      </div>
+      <p>&copy; 2022 T & T Marketing</p>
+    </footer>
+  )
+}
+
+export default Footer

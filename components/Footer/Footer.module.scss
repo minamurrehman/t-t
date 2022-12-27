@@ -1,0 +1,70 @@
+@import 'variables';
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  border-top: 3px solid $secondary-color;
+
+  @media screen and (max-width: 600px) {
+    border: none;
+  }
+  & > p {
+    background-color: $secondary-color;
+    color: $primary-color;
+    font-size: 18px;
+    font-weight: 400;
+    width: 100%;
+    line-height: 32px;
+    letter-spacing: 0.004rem;
+    text-align: center;
+  }
+  .footerInner {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    border-left: 1px solid $secondary-color;
+    border-right: 1px solid $secondary-color;
+
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+      border: none;
+      padding: 0;
+    }
+
+    & > * {
+      @media screen and (max-width: 600px) {
+        border-top: 4px solid $secondary-color;
+        width: 100%;
+        padding: 2em;
+      }
+    }
+    & > * > p {
+      color: $secondary-color;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 32px;
+    }
+    & > * > ul {
+      display: flex;
+      flex-direction: column;
+      color: $secondary-color;
+      font-size: 18px;
+      font-weight: 400;
+      margin-top: 1.6rem;
+      line-height: 28.8px;
+      gap: 0.8rem;
+    }
+    & > * > ul > a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}

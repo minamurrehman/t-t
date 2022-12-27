@@ -1,0 +1,166 @@
+{
+  "menu": [
+    {
+      "url": "/",
+      "title": "Home"
+    },
+    {
+      "url": "/about",
+      "title": "About Us"
+    },
+    {
+      "url": "/clients",
+      "title": "Our Clients"
+    }
+  ],
+  "keenetic": {
+    "title": "CREATING AND GROWING SOCIAL ACCOUNTS FOR KEENETIC",
+    "image": "/keenetic-banner.png",
+    "subtitle": "keenetic",
+    "color": "#0072AC",
+    "options": [
+      {
+        "title": "At a Glance",
+        "desc": "Keenetic is an ambitious and innovative designer, developer & vendor, focused on Wi-Fi routers. Since 2010 several dozen models have been launched, and the number of users of the brand has exceeded seven million across Europe. They wanted to start and grow their social media platforms, create brand awareness and increase sales."
+      },
+      {
+        "title": "OUR APPROACH",
+        "desc": "Working closely with the client and communicating their goals and expectations, we developed a strategy to create and grow. After learning about their target audience, we came up with content that worked with their product. From memes and community engagement to educational content and trending videos, we were able to launch and establish a social media presence for Keenetic in just 3 months. We also ran contests and used product placement and partnerships when possible. We monitored analytics closely and changed our approach as needed to ensure better results."
+      },
+      {
+        "title": "CHALLENGES",
+        "desc": "Previously not having Twitter, TikTok or Youtube, our team was starting these accounts from zero. Further, wifi routers are not something that is super aesthetic and easy to market. We also had limited content to work with and not a very large budget, so we would have to focus on organic growth."
+      }
+    ],
+    "strategies": [
+      {
+        "title": "Trends and Analytics",
+        "desc": "Staying up to date on the latest trends to create engaging content. Tracking analytics constantly to adjust for things like best posting times."
+      },
+      {
+        "title": "Video Content",
+        "desc": "Short video has become the fastest-growing form of social media content, which we pushed through TikTok. We also assisted in launching a Youtube and created videos and stories."
+      },
+      {
+        "title": "Engagement and Interactions",
+        "desc": "We responded to followers, and reposted and followed accounts with similar interests to grow the community and have a more approachable voice and brand."
+      },
+      {
+        "title": "Product Placement and Partnerships",
+        "desc": "By placing Keenetic products at the center of large gaming events, and doing giveaways through partnerships, we raised brand awareness and trust."
+      }
+    ],
+    "data": [
+      {
+        "title": "Twitter followers",
+        "amount": "1.3K +"
+      },
+      {
+        "title": "Profile views",
+        "amount": "30K +"
+      },
+      {
+        "title": "TikTok views",
+        "amount": "8K +"
+      }
+    ],
+    "example": [
+      {
+        "image": "/keen-e-1.png"
+      },
+      {
+        "image": "/keen-e-2.png"
+      }
+    ]
+  },
+  "heet": {
+    "title": "USING SOCIAL MEDIA TO GAIN PARTNERSHIPS AND GROW AN ACTIVE COMMUNITY",
+    "image": "/heet.png",
+    "subtitle": "Heet Gaming",
+    "color": "#DC0018",
+    "options": [
+      {
+        "title": "At a Glance",
+        "desc": "HEET Gaming is a premier gaming community that is dedicated to providing an exciting experience that gamers are proud of. HEET competes in numerous games at the highest levels. Their goals are to build a community of heroes united by their passion for Esports and gaming and to serve that community with experiences on and off the server."
+      },
+      {
+        "title": "OUR APPROACH",
+        "desc": "We used our connection to the gaming community to give us feedback and directions on examples we created. Not only were they more engaged with the brand, but it was also a unique selling point of being a community-driven company. From these directions, we created a strategy that tells the story of HEET. We worked to create content that aligned with the new voice and was engaging with the audience."
+      },
+      {
+        "title": "CHALLENGES",
+        "desc": "The challenge for HEET was to come up with a unique brand and selling point that attracted the target audience: Gen Z. It required a re-brand, from the old logo and texts, into something new and modern without losing the identity that had already been created and known to the community. The goal was to create and grow a brand that was not too corporate or boring."
+      }
+    ],
+    "strategies": [
+      {
+        "title": "Community Involvement",
+        "desc": "Directly communicating and receiving input from our community, to show."
+      },
+      {
+        "title": "Getting Creative with Paper and Pen",
+        "desc": "Drawing ideas on paper, and using unique materials to come up with new styles and patterns."
+      },
+      {
+        "title": "High Level Content Creation",
+        "desc": "Making high-quality professional content without taking a corporate direction."
+      },
+      {
+        "title": "Out of the Box Strategies",
+        "desc": "Trying new tactics, and approaching our channels from the perspective of our audience, not from common strategies."
+      }
+    ],
+    "data": [
+      {
+        "title": "Twitter followers",
+        "amount": "12.7K +"
+      },
+      {
+        "title": "Twitter Impressions",
+        "amount": "12M +"
+      },
+      {
+        "title": "TikTok Likes",
+        "amount": "940K +"
+      }
+    ],
+    "example": [
+      {
+        "image": "/heet-e-1.png"
+      },
+      {
+        "image": "/heet-e-2.png"
+      },
+      {
+        "image": "/heet-e-3.png"
+      }
+    ]
+  },
+  "members": [
+    {
+      "name": "Tim “Timmy” Buysse",
+      "image": "/timmy.png",
+      "role": "Founder"
+    },
+    {
+      "name": "Jasur “Jazz” Avizov",
+      "image": "/jazz.png",
+      "role": "Creative Director"
+    },
+    {
+      "name": "Monica “Mon” Przyborowski",
+      "image": "/mon.png",
+      "role": "Head of Marketing"
+    },
+    {
+      "name": "Diana “Insomnia” Vaisova",
+      "image": "/insomnia.png",
+      "role": "Graphic Designer"
+    },
+    {
+      "name": "Danial “Tenzay” Karlik",
+      "image": "/tenzay.png",
+      "role": "Partnership and Community Management"
+    }
+  ]
+}
