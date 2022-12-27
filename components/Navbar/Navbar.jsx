@@ -31,7 +31,7 @@ const Navbar = ({ active }) => {
 
           <div className={styles.navMenus}>
             {data?.menu?.map((item, index) => (
-              <Link key={index} href={item?.url}>
+              <Link key={index} href={item?.url} onClick={() => setShow(false)}>
                 {item?.title}
               </Link>
             ))}

@@ -44,9 +44,9 @@ const About = () => {
 
       {/* TEAM MEMBERS  */}
 
-      <div className={styles.teamWrapper} ref={ref}>
+      <div className={styles.teamWrapper}>
         {data?.members?.map((member, i) => (
-          <div key={i} className={styles.teamCard}>
+          <div key={i} className={styles.teamCard} ref={ref}>
             <motion.div
               initial={{ transform: 'rotate(0deg)' }}
               animate={{
