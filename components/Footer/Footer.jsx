@@ -16,7 +16,7 @@ const Footer = () => {
         <div>
           <p>Contact Us</p>
           <ul>
-            <Link href='mailto:inaam@gmail.com'>Send an e-mail</Link>
+            <Link href='mailto:buysse.tim@gmail.com'>Send an e-mail</Link>
             <Link href='https://calendly.com/timbuysse1985'>
               Book a Meeting
             </Link>
