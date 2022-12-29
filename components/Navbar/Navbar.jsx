@@ -21,7 +21,9 @@ const Navbar = ({ active }) => {
       {show ? (
         <div className={styles.mobileMenu}>
           <div className={styles.topRow}>
-            <Image src={Logo} alt='Logo' />
+            <Link href='/' style={{ cursor: 'pointer' }}>
+              <Image src={Logo} alt='Logo' />
+            </Link>
             <AiOutlineClose
               size={38}
               color='white'
@@ -41,14 +43,20 @@ const Navbar = ({ active }) => {
               Contact Us
             </Link>
             <div>
-              <BsLinkedin size={30} color='#03EECA' />
-              <BsInstagram size={30} color='#03EECA' />
+              <Link href='https://www.linkedin.com/company/tntmarketing/'>
+                <BsLinkedin size={30} color='#03EECA' />
+              </Link>
+              <Link href='https://www.instagram.com/marketing.tnt/'>
+                <BsInstagram size={30} color='#03EECA' />
+              </Link>
             </div>
           </div>
         </div>
       ) : (
         <div className={styles.nav}>
-          <Image src={Logo} alt='Logo' />
+          <Link href='/' style={{ cursor: 'pointer' }}>
+            <Image src={Logo} alt='Logo' />
+          </Link>
           {/* Nav Links  */}
           <div className={styles.hamburger} onClick={() => setShow(true)}>
             <BiMenu size={38} color='white' />
@@ -75,8 +83,12 @@ const Navbar = ({ active }) => {
             <Link href='/contact' className='button'>
               Contact Us
             </Link>
-            <BsLinkedin size={30} color='#03EECA' />
-            <BsInstagram size={30} color='#03EECA' />
+            <Link href='https://www.linkedin.com/company/tntmarketing/'>
+              <BsLinkedin size={30} color='#03EECA' />
+            </Link>
+            <Link href='https://www.instagram.com/marketing.tnt/'>
+              <BsInstagram size={30} color='#03EECA' />
+            </Link>
           </div>
         </div>
       )}

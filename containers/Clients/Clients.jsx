@@ -13,12 +13,14 @@ import Link from 'next/link'
 
 const Clients = () => {
   const [visible, setVisible] = useState(false)
-  const { ref, inView, entry } = useInView()
+  const { ref, inView, entry } = useInView({
+    rootMargin: '-200px',
+  })
   return (
     <div>
       <div className={styles.client} ref={ref}>
-        <div className={`${styles.left} ${styles.animateLeft}`}>
-          <Image src={Client1} alt='Client 1' />
+        <div className={`${styles.left} ${inView ? styles.animateLeft : ''}`}>
+          <Image src={Client1} alt='Logo Left' />
         </div>
         {inView && (
           <motion.div
@@ -61,8 +63,8 @@ const Clients = () => {
             </Link>
           </motion.div>
         )}
-        <div className={`${styles.right} ${styles.animateRight}`}>
-          <Image src={Client2} alt='Client 1' />
+        <div className={`${styles.right} ${inView ? styles.animateRight : ''}`}>
+          <Image src={Client2} alt='Logo Right' />
         </div>
       </div>
     </div>

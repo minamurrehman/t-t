@@ -23,8 +23,12 @@ const Footer = () => {
         <div>
           <p>Social</p>
           <ul>
-            <Link href='/'>Instagram</Link>
-            <Link href='/'>Linkedin</Link>
+            <Link href='https://www.instagram.com/marketing.tnt/'>
+              Instagram
+            </Link>
+            <Link href='https://www.linkedin.com/company/tntmarketing/'>
+              Linkedin
+            </Link>
           </ul>
         </div>
       </div>
