@@ -22,12 +22,12 @@ const Hero = () => {
 
         <div className={styles.heroInfo}>
           <p>
-            WE ARE A FULL SERVICE SOCIAL MEDIA MANAGEMENT COMPANY FOCUSED ON
-            GROWTH AND INNOVATION.
+            WE ARE A FULL SERVICE SOCIAL MEDIA AND MARKETING MANAGEMENT COMPANY
+            FOCUSED ON GROWTH AND INNOVATION.
           </p>
           <p>
-            WITH OUR EXPERTISE AND OUR LOVE FOR SOCIAL MEDIA, WE ARE COMMITTED
-            TO HELPING OUR CLIENTS GENERATE RESULTS.
+            WITH OUR EXPERTISE AND OUR LOVE FOR SOCIAL MEDIA AND MARKETING, WE
+            ARE COMMITTED TO HELPING OUR CLIENTS GENERATE RESULTS.
           </p>
           <Link href='/' className={styles.button}>
             View more

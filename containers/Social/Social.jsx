@@ -16,8 +16,8 @@ const Social = () => {
   return (
     <div className={styles.social}>
       <p className={styles.socialTitle}>
-        WE PROVIDE SOCIAL MEDIA MANAGEMENT AND CONTENT CREATION FOR NUMEROUS
-        SOCIAL PLATFORMS
+        WE PROVIDE SOCIAL MEDIA AND MARKETING MANAGEMENT AND CONTENT CREATION
+        FOR NUMEROUS SOCIAL PLATFORMS
       </p>
       <div ref={ref} className={`${styles.socialItems} `}>
         {items.map((item) =>

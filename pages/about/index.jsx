@@ -34,15 +34,16 @@ const About = () => {
             <span></span>
           </div>
           <p className={styles.aboutPara}>
-            We are a social media agency run by people that truly understand how
-            digital marketing works specifically for industries such as gaming,
-            technology, crypto and esports. Our number one goal is to always
-            deliver the best results to our clients, and to ensure no stone is
-            left unturned in making them happy and successful on their social
-            media channels. Although everyone on our team is a professional with
-            years of experience, we can guarantee working with us will be a
-            blast! We’re devoted to a small number of clients and always have
-            someone available to handle any social media emergencies.
+            We are a social media and marketing agency run by people that truly
+            understand how digital marketing works specifically for industries
+            such as gaming, technology, crypto and esports. Our number one goal
+            is to always deliver the best results to our clients, and to ensure
+            no stone is left unturned in making them happy and successful on
+            their social media channels. Although everyone on our team is a
+            professional with years of experience, we can guarantee working with
+            us will be a blast! We’re devoted to a small number of clients and
+            always have someone available to handle any social media
+            emergencies.
           </p>
           <div>
             <span></span>
