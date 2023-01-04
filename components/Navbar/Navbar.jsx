@@ -39,7 +39,7 @@ const Navbar = ({ active }) => {
             ))}
           </div>
           <div className={styles.mobileSocial}>
-            <Link href='/contact' className='button'>
+            <Link href='mailto:buysse.tim@gmail.com' className='button'>
               Contact Us
             </Link>
             <div>
@@ -80,7 +80,7 @@ const Navbar = ({ active }) => {
           </div>
           {/* Social  */}
           <div className={styles.social}>
-            <Link href='/contact' className='button'>
+            <Link href='mailto:buysse.tim@gmail.com' className='button'>
               Contact Us
             </Link>
             <Link href='https://www.linkedin.com/company/tntmarketing/'>
