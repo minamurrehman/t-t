@@ -18,7 +18,13 @@ const ClientInfo = () => {
       }}
     >
       <div className={styles.imageContainer}>
-        <Image src={val?.image} alt={val?.title} width={300} height={360} />
+        <Image
+          quality={100}
+          src={val?.image}
+          alt={val?.title}
+          width={1500}
+          height={660}
+        />
         <div>
           <p>{val?.title}</p>
           <p>{val?.subtitle}</p>
