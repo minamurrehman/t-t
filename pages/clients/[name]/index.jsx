@@ -25,9 +25,9 @@ const ClientInfo = () => {
           width={1500}
           height={660}
         />
-        <div>
-          <p>{val?.title}</p>
-          <p>{val?.subtitle}</p>
+        <div className={styles.imageInfo}>
+          <p className={styles.imageTitle}>{val?.title}</p>
+          <p className={styles.imageLogo}>{val?.subtitle}</p>
         </div>
       </div>
 
@@ -92,7 +92,7 @@ const ClientInfo = () => {
                 color: val?.color,
               }}
             >
-              Expample Posts
+              Example Posts
             </p>
             <div>
               {val?.example?.map((ex, i) => (

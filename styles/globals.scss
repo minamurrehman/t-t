@@ -29,3 +29,7 @@ body {
   padding: 0.5rem;
   border-radius: 2px;
 }
+.toast {
+  background-color: $secondary-color !important;
+  color: $primary-color !important;
+}

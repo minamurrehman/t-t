@@ -11,6 +11,10 @@
     {
       "url": "/clients",
       "title": "Our Clients"
+    },
+    {
+      "url": "/pricing",
+      "title": "Pricing"
     }
   ],
   "keenetic": {
@@ -81,21 +85,21 @@
     "options": [
       {
         "title": "At a Glance",
-        "desc": "HEET Gaming is a premier gaming community that is dedicated to providing an exciting experience that gamers are proud of. HEET competes in numerous games at the highest levels. Their goals are to build a community of heroes united by their passion for Esports and gaming and to serve that community with experiences on and off the server."
+        "desc": "HEET Gaming is a premier gaming community, dedicated to providing an exciting experience that gamers are proud of. HEET competes in numerous games at the highest levels. Its goal is to build a community of heroes united by their passion for Esports and gaming and to serve that community with experiences on and off the server."
       },
       {
         "title": "OUR APPROACH",
-        "desc": "We used our connection to the gaming community to give us feedback and directions on examples we created. Not only were they more engaged with the brand, but it was also a unique selling point of being a community-driven company. From these directions, we created a strategy that tells the story of HEET. We worked to create content that aligned with the new voice and was engaging with the audience."
+        "desc": "We asked our network in the gaming community to give us feedback and directions on examples we created. In doing so their engagement with the brand increased. With the community’s feedback, we created a strategy that tells the story of HEET. We created content that aligned with the required rebranding while engaging with the audience. This approach resulted in the unique selling point of HEET being a community-driven company."
       },
       {
         "title": "CHALLENGES",
-        "desc": "The challenge for HEET was to come up with a unique brand and selling point that attracted the target audience: Gen Z. It required a re-brand, from the old logo and texts, into something new and modern without losing the identity that had already been created and known to the community. The goal was to create and grow a brand that was not too corporate or boring."
+        "desc": "The challenge for HEET was to come up with a unique brand and selling point that attracted the target audience: Gen Z. It required a re-brand, from the old logo and texts, into something new and modern without losing the identity that had already been created and was known to the community. The goal was to create and grow a brand that was not too corporate or boring."
       }
     ],
     "strategies": [
       {
         "title": "Community Involvement",
-        "desc": "Directly communicating and receiving input from our community, to show."
+        "desc": "Directly communicating and receiving input from our community."
       },
       {
         "title": "Getting Creative with Paper and Pen",
@@ -161,6 +165,206 @@
       "name": "Danial “Tenzay” Karlik",
       "image": "/tenzay.png",
       "role": "Partnership and Community Management"
+    }
+  ],
+  "plans": [
+    {
+      "planName": "Basic",
+      "price": "€299",
+      "options": [
+        {
+          "name": "Website Creation",
+          "available": true
+        },
+        {
+          "name": "Website Hosting",
+          "available": true
+        },
+        {
+          "name": "Website Updates",
+          "available": true
+        },
+        {
+          "name": "SEO Optimization",
+          "available": true
+        },
+        {
+          "name": "Logo Creation",
+          "available": true
+        },
+        {
+          "name": "Weekly Consultating",
+          "available": true
+        },
+        {
+          "name": "Market Research",
+          "available": true
+        },
+        {
+          "name": "Social Media Management",
+          "available": false
+        },
+        {
+          "name": "Social Media Branding",
+          "available": false
+        },
+        {
+          "name": "Marketing Presentation",
+          "available": false
+        },
+        {
+          "name": "Video Creation",
+          "available": false
+        },
+        {
+          "name": "Content Creation",
+          "available": false
+        },
+        {
+          "name": "AD Campaigns",
+          "available": false
+        },
+        {
+          "name": "Influencer Activations",
+          "available": false
+        },
+        {
+          "name": "Customer Acquisition",
+          "available": false
+        }
+      ]
+    },
+    {
+      "planName": "Standard",
+      "price": "€999",
+      "options": [
+        {
+          "name": "Website Creation",
+          "available": true
+        },
+        {
+          "name": "Website Hosting",
+          "available": true
+        },
+        {
+          "name": "Website Updates",
+          "available": true
+        },
+        {
+          "name": "SEO Optimization",
+          "available": true
+        },
+        {
+          "name": "Logo Creation",
+          "available": true
+        },
+        {
+          "name": "Weekly Consultating",
+          "available": true
+        },
+        {
+          "name": "Market Research",
+          "available": true
+        },
+        {
+          "name": "Social Media Management",
+          "available": true
+        },
+        {
+          "name": "Social Media Branding",
+          "available": true
+        },
+        {
+          "name": "Marketing Presentation",
+          "available": true
+        },
+        {
+          "name": "Video Creation",
+          "available": false
+        },
+        {
+          "name": "Content Creation",
+          "available": false
+        },
+        {
+          "name": "AD Campaigns",
+          "available": false
+        },
+        {
+          "name": "Influencer Activations",
+          "available": false
+        },
+        {
+          "name": "Customer Acquisition",
+          "available": false
+        }
+      ]
+    },
+    {
+      "planName": "Premium",
+      "price": "€2499",
+      "options": [
+        {
+          "name": "Website Creation",
+          "available": true
+        },
+        {
+          "name": "Website Hosting",
+          "available": true
+        },
+        {
+          "name": "Website Updates",
+          "available": true
+        },
+        {
+          "name": "SEO Optimization",
+          "available": true
+        },
+        {
+          "name": "Logo Creation",
+          "available": true
+        },
+        {
+          "name": "Weekly Consultating",
+          "available": true
+        },
+        {
+          "name": "Market Research",
+          "available": true
+        },
+        {
+          "name": "Social Media Management",
+          "available": true
+        },
+        {
+          "name": "Social Media Branding",
+          "available": true
+        },
+        {
+          "name": "Marketing Presentation",
+          "available": true
+        },
+        {
+          "name": "Video Creation",
+          "available": true
+        },
+        {
+          "name": "Content Creation",
+          "available": true
+        },
+        {
+          "name": "AD Campaigns",
+          "available": true
+        },
+        {
+          "name": "Influencer Activations",
+          "available": true
+        },
+        {
+          "name": "Customer Acquisition",
+          "available": true
+        }
+      ]
     }
   ]
 }

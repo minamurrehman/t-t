@@ -62,21 +62,17 @@ const Navbar = ({ active }) => {
             <BiMenu size={38} color='white' />
           </div>
           <div className={styles.nav_links}>
-            <Link className={active === '' ? styles.active : null} href='/'>
-              Home
-            </Link>
-            <Link
-              className={active === 'about' ? styles.active : null}
-              href='/about'
-            >
-              About Us
-            </Link>
-            <Link
-              className={active === 'clients' ? styles.active : null}
-              href='/clients'
-            >
-              Our Clients
-            </Link>
+            {data?.menu?.map((item, index) => (
+              <Link
+                className={
+                  active === item?.url.split('/')[1] ? styles.active : null
+                }
+                key={index}
+                href={item?.url}
+              >
+                {item?.title}
+              </Link>
+            ))}
           </div>
           {/* Social  */}
           <div className={styles.social}>

@@ -3,11 +3,13 @@ import { useRouter } from 'next/router'
 import Footer from '../components/Footer/Footer'
 import Navbar from '../components/Navbar/Navbar'
 import '../styles/globals.scss'
-
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 const bai = Bai_Jamjuree({
   weight: ['200', '300', '400', '500', '600', '700'],
   style: 'normal',
   display: 'swap',
+  variable: '--font-bai',
 })
 
 export default function App({ Component, pageProps }) {
@@ -22,6 +24,8 @@ export default function App({ Component, pageProps }) {
     >
       <Navbar active={active} />
       <Component {...pageProps} />
+      <ToastContainer />
+
       <Footer />
     </div>
   )
