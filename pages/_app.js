@@ -5,6 +5,8 @@ import Navbar from '../components/Navbar/Navbar'
 import '../styles/globals.scss'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import Script from 'next/script'
+
 const bai = Bai_Jamjuree({
   weight: ['200', '300', '400', '500', '600', '700'],
   style: 'normal',
@@ -22,6 +24,19 @@ export default function App({ Component, pageProps }) {
         color: 'white',
       }}
     >
+      <Script
+        strategy='afterInteractive'
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.ANALYTICS_ID}`}
+      />
+      <Script id='ga-script' strategy='afterInteractive'>
+        {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', '${process.env.ANALYTICS_ID}');
+          `}
+      </Script>
       <Navbar active={active} />
       <Component {...pageProps} />
       <ToastContainer />
