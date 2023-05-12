@@ -1,32 +1,32 @@
-import Image from 'next/image'
-import React from 'react'
-import styles from './about.module.scss'
-import Logo from '../../images/team-logo.png'
-import data from '../../utils/data.json'
+import Image from "next/image";
+import React from "react";
+import styles from "./about.module.scss";
+import Logo from "../../images/team-logo.png";
+import data from "../../utils/data.json";
 
-import { motion } from 'framer-motion'
-import { useInView } from 'react-hook-inview'
-import Head from 'next/head'
+import { motion } from "framer-motion";
+import { useInView } from "react-hook-inview";
+import Head from "next/head";
 
 const About = () => {
-  const [done, setDone] = React.useState(false)
+  const [done, setDone] = React.useState(false);
   const [ref, inView] = useInView({
     threshold: 0.5,
     defaultInView: false,
     onEnter: () => {
       // wait for 4 seconds before setting done to true
       setTimeout(() => {
-        setDone(true)
-      }, 2000)
+        setDone(true);
+      }, 2000);
     },
-  })
+  });
 
   return (
     <>
       <Head>
         <title>About Us | T & T Marketing</title>
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='icon' href='/logo.png' />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/logo.png" />
       </Head>
       <div className={styles.aboutWrapper}>
         <div>
@@ -65,18 +65,20 @@ const About = () => {
           {data?.members?.map((member, i) => (
             <div key={i} className={styles.teamCard} ref={ref}>
               <motion.div
-                initial={{ transform: 'rotate(0deg)' }}
+                initial={{ transform: "rotate(0deg)" }}
                 animate={{
-                  transform: inView ? 'rotate(360deg)' : 'rotate(360deg)',
+                  transform: inView ? "rotate(360deg)" : "rotate(360deg)",
                 }}
                 transition={{ duration: 2 }}
               >
-                <Image
-                  loading='eager'
-                  src={done ? member?.image : Logo}
-                  alt={'Logo'}
-                  fill={done ? true : false}
-                />
+                <div>
+                  <Image
+                    loading="eager"
+                    src={done ? member?.image : Logo}
+                    alt={"Logo"}
+                    fill={done ? true : false}
+                  />
+                </div>
               </motion.div>
               <div className={styles.teamInfo}>
                 <p>{member?.name}</p>
@@ -87,7 +89,7 @@ const About = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;
