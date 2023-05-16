@@ -26,7 +26,7 @@ const About = () => {
       <Head>
         <title>About Us | T & T Marketing</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/logo.png" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
       <div className={styles.aboutWrapper}>
         <div>

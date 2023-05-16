@@ -4,7 +4,7 @@ import styles from "./clients.module.scss";
 import Image from "next/image";
 import Heet from "../../images/heet.png";
 import Kee from "../../images/kee.png";
-import Vibes from "../../images/vibes-2.png";
+import Vibes from "../../images/vibes.png";
 import Link from "next/link";
 import Head from "next/head";
 
@@ -14,7 +14,7 @@ const Clients = () => {
       <Head>
         <title>Our Clients | T & T Marketing </title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/logo.png" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
       <div className={styles.clientInfo}>
         <div>
@@ -67,7 +67,7 @@ const Clients = () => {
             target="_blank"
             href="https://running-vibes.vercel.app/"
           >
-            Case Study
+            Website Creation
           </Link>
         </div>
       </div>
