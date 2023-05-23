@@ -5,6 +5,7 @@ import Image from "next/image";
 import Heet from "../../images/heet.png";
 import Kee from "../../images/kee.png";
 import Vibes from "../../images/vibes.png";
+import Flagship from "../../images/flagship.svg";
 import Link from "next/link";
 import Head from "next/head";
 
@@ -61,6 +62,36 @@ const Clients = () => {
             recipes and informative articles, as well as one of the most
             positive communities on the web, you’ll have everything you need to
             reach your personal fitness goals – for free!
+          </p>
+          <Link
+            className={`${styles.btn} button`}
+            target="_blank"
+            href="https://running-vibes.vercel.app/"
+          >
+            Website Creation
+          </Link>
+        </div>
+        <div>
+          <Image
+            src={Flagship}
+            alt="Vibes Logo"
+            style={{
+              filter: "revert",
+              height: "50px",
+            }}
+          />
+          <p>
+            <span
+              style={{ textAlign: "center", margin: "auto", display: "block" }}
+            >
+              Flagship.fyi Copywriting & SEO
+            </span>{" "}
+            <br />
+            We’re bringing all your crypto needs together under one roof.
+            Whether it’s assets, information, data, experts or education,
+            Flagship is here to help you! In Gaming outpost! In here, we discuss
+            everything about Web3 Gaming - from Play-to-Earn games to NFT gaming
+            projects.
           </p>
           <Link
             className={`${styles.btn} button`}

@@ -72,10 +72,12 @@
   .teamWrapper {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-wrap: wrap;
     margin: 3rem auto;
     flex-wrap: wrap;
     max-width: 1500px;
+    gap: 5rem;
 
     .teamCard {
       display: flex;
