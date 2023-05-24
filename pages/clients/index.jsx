@@ -81,12 +81,6 @@ const Clients = () => {
             }}
           />
           <p>
-            <span
-              style={{ textAlign: "center", margin: "auto", display: "block" }}
-            >
-              Flagship.fyi Copywriting & SEO
-            </span>{" "}
-            <br />
             We’re bringing all your crypto needs together under one roof.
             Whether it’s assets, information, data, experts or education,
             Flagship is here to help you! In Gaming outpost! In here, we discuss
@@ -98,7 +92,7 @@ const Clients = () => {
             target="_blank"
             href="https://running-vibes.vercel.app/"
           >
-            Website Creation
+            Copywriting & SEO optimisation
           </Link>
         </div>
       </div>
