@@ -1,6 +1,6 @@
 .clientInfo {
   display: flex;
-  align-items: center;
+  align-items: start;
   max-width: 1200px;
   margin: 4rem auto 1rem auto;
   justify-content: space-between;
@@ -44,7 +44,7 @@
 }
 .clientInfoSecond {
   display: flex;
-  align-items: center;
+  align-items: start;
   max-width: 1200px;
   margin: 1rem auto;
   justify-content: space-between;
@@ -70,7 +70,7 @@
     margin: 1rem auto;
   }
   & > :nth-child(2) {
-    margin-top: 4rem;
+    margin-top: .8rem;
   }
   & > :nth-child(2) > :nth-child(1) {
     width: 100%;
