@@ -90,7 +90,7 @@ const Clients = () => {
           <Link
             className={`${styles.btn} button`}
             target="_blank"
-            href="https://running-vibes.vercel.app/"
+            href="https://flagship.fyi/outposts/gaming/"
           >
             Copywriting & SEO optimisation
           </Link>
