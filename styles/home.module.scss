@@ -1,0 +1,45 @@
+@import "variables";
+
+.typeContainer {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 1em;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr;
+    place-items: center;
+
+    @media screen and (min-width:1024px) {
+        grid-template-columns: 1fr 1fr;
+        place-items: start;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .typeText {
+        font-size: 18px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        text-transform: uppercase;
+    }
+}
+
+.carouselContainer {
+    background-color: $tertiary-color;
+    padding: 2.5rem 0;
+    margin-top: 4rem;
+
+    .heading {
+        font-size: 2.25rem;
+        color: $secondary-color;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
+
+.hear {
+    margin: 2rem auto;
+}

@@ -1,0 +1,16 @@
+<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="&#240;&#159;&#166;&#134; emoji &#34;heart decoration&#34;">
+<path id="Vector" d="M30.9167 35H4.08333C1.82875 35 0 33.1712 0 30.9167V4.08333C0 1.82875 1.82875 0 4.08333 0H30.9167C33.1712 0 35 1.82875 35 4.08333V30.9167C35 33.1712 33.1712 35 30.9167 35Z" fill="url(#paint0_linear_696_2340)"/>
+<path id="Vector_2" d="M24.0421 5.51245C19.2646 5.51245 17.5088 11.2262 17.5088 11.2262C17.5088 11.2262 15.7763 5.51245 10.9638 5.51245C7.34714 5.51245 3.22297 8.37954 4.74839 14.8925C6.27089 21.4054 17.4621 29.4874 17.4621 29.4874C17.4621 29.4874 17.5205 29.4641 17.5205 29.4291C17.5205 29.4641 17.5584 29.4816 17.5584 29.4816C17.5584 29.4816 28.7292 21.4054 30.2546 14.8895C31.7771 8.37953 27.6588 5.51245 24.0421 5.51245Z" fill="url(#paint1_radial_696_2340)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_696_2340" x1="17.5" y1="0" x2="17.5" y2="35" gradientUnits="userSpaceOnUse">
+<stop offset="0.4748" stop-color="#B388FF"/>
+<stop offset="0.913" stop-color="#7C4DFF"/>
+</linearGradient>
+<radialGradient id="paint1_radial_696_2340" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(17.5011 11.3759) rotate(-90) scale(12.1107 13.8488)">
+<stop offset="0.5716" stop-color="#FAFAFA"/>
+<stop offset="1" stop-color="#EEEEEE"/>
+</radialGradient>
+</defs>
+</svg>

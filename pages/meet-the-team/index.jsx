@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import styles from "./about.module.scss";
+import styles from "./meet.module.scss";
 import Logo from "../../images/team-logo.png";
 import data from "../../utils/data.json";
 

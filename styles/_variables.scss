@@ -1,5 +1,6 @@
 $primary-color: #171717;
 $secondary-color: #03eeca;
+$tertiary-color: #09302F;
 
 // ============ Mixins ============
 @mixin flex-center {
@@ -12,3 +13,12 @@ $secondary-color: #03eeca;
 $breakpoint-mobile: 600px;
 $breakpoint-tablet: 900px;
 $breakpoint-desktop: 1200px;
+
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-secondary {
+  color: $secondary-color
+}

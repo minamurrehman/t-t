@@ -5,16 +5,92 @@
       "title": "Home"
     },
     {
-      "url": "/about",
-      "title": "About Us"
+      "url": "/meet-the-team",
+      "title": "Meet the team"
     },
     {
       "url": "/clients",
       "title": "Our Clients"
     },
     {
+      "url": "/services",
+      "title": "Services"
+    },
+    {
       "url": "/pricing",
       "title": "Pricing"
+    }
+  ],
+  "services": [
+    {
+      "logo": "/images/emoji-globe-with-meridians.svg",
+      "heading": "Website Creation",
+      "text": "We'll build a stunning and user-friendly website that captures your brand's essence."
+    },
+    {
+      "logo": "/images/emoji-glowing-star.svg",
+      "heading": "Website Hosting",
+      "text": "Trust us to keep your website secure and running smoothly, so you can focus on growing your business."
+    },
+    {
+      "logo": "/images/emoji-sparkles.svg",
+      "heading": "Website Updates",
+      "text": "Stay fresh and relevant with regular website updates that ensure your online presence is always at its best."
+    },
+    {
+      "logo": "/images/emoji-left-pointing-magnifying-glass.svg",
+      "heading": "SEO Optimization",
+      "text": "Boost your online visibility and attract more organic traffic with our expert SEO techniques."
+    },
+    {
+      "logo": "/images/emoji-artist-palette.svg",
+      "heading": "Logo Creation",
+      "text": "Let us design a unique and memorable logo that represents your brand perfectly."
+    },
+    {
+      "logo": "/images/emoji-telephone.svg",
+      "heading": "Weekly Consultations",
+      "text": "Gain valuable insights and guidance from our experts during our weekly consulting sessions."
+    },
+    {
+      "logo": "/images/emoji-bar-chart.svg",
+      "heading": "Market Research",
+      "text": "Make informed decisions with our in-depth market research services, providing you with valuable insights."
+    },
+    {
+      "logo": "/images/emoji-mobile-phone.svg",
+      "heading": "Social Media Management",
+      "text": "We'll handle your social media presence, engaging your audience and growing your brand."
+    },
+    {
+      "logo": "/images/emoji-heart-decoration.svg",
+      "heading": "Social Media Branding",
+      "text": "Stand out on social media with a cohesive and captivating brand strategy."
+    },
+    {
+      "logo": "/images/emoji-film-projector.svg",
+      "heading": "Video Creation",
+      "text": "Engage your audience with high-quality videos that tell your brand's story effectively."
+    },
+    {
+      "logo": "/images/emoji-writing-hand-light-skin-tone.svg",
+      "heading": "Content Creation",
+      "text": "Fuel your marketing efforts with compelling and tailored content that resonates with your target audience."
+    },
+    {
+      "logo": "/images/emoji-collision.svg",
+      "heading": "AD Campaigns",
+      "text": "Maximize your reach and drive conversions with targeted and impactful advertising campaigns."
+    },
+    {
+      "logo": "/images/emoji-bust-in-silhouette.svg",
+      "heading": "Influencer Activations",
+      "text": "Leverage the power of influencers to amplify your brand's reach and connect with your audience."
+    },
+    {
+      "logo": "/images/emoji-rocket.svg",
+      "heading": "Customer Acquisition",
+      "text": "Expand your customer base and increase revenue with our proven customer acquisition strategies."
     }
   ],
   "keenetic": {

@@ -6,6 +6,8 @@ import "../styles/globals.scss";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Script from "next/script";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const bai = Bai_Jamjuree({
   weight: ["200", "300", "400", "500", "600", "700"],
