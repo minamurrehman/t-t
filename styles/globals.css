@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slick-dots {
+  overflow: hidden;
+  max-width: -webkit-fill-available;
+}
+
+.slick-dots > li > button::before {
+  color: white;
+}
+
+.slick-active > button::before {
+  color: white !important;
+}
+
+.footer {
+  @apply w-full bg-tertiary;
+}
+
+.footer__container {
+  @apply grid grid-cols-1 gap-y-6 sm:grid-cols-3 max-w-7xl mx-auto py-12 items-center sm:justify-items-center px-6 md:px-0;
+}
+
+.footer__logo {
+  @apply grid grid-cols-1 sm:grid-cols-2 gap-y-4 h-full items-center;
+}
+
+.footer__logo__image {
+  @apply h-full sm:w-auto w-16;
+}
+
+.footer__logo__links {
+  @apply flex flex-col gap-2;
+}
+
+.footer__contact {
+  @apply flex flex-col gap-4;
+}
+
+.footer__social {
+  @apply flex flex-col gap-4;
+}
+
+.footer__headings {
+  @apply text-secondary text-xl font-bold;
+}
+
+.footer__copyright {
+  @apply text-center bg-secondary text-typo text-lg py-1;
+}

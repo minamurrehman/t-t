@@ -4,7 +4,7 @@ import ServiceImage from "../../images/services.svg";
 import Service1 from "../../images/service1.png";
 import Service2 from "../../images/service2.png";
 import Button from "../../components/Button/Button";
-import { services } from "../../utils/data.json";
+import data from "../../utils/data.json";
 import ServiceCard from "../../components/ServiceCard/ServiceCard";
 const Services = () => {
   return (
@@ -24,7 +24,7 @@ const Services = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3">
         <div className="flex flex-col gap-4 md:mt-12 col-span-2">
-          {services?.map((service) => (
+          {data?.services?.map((service) => (
             <ServiceCard
               image={service?.logo}
               heading={service?.heading}
@@ -49,7 +49,11 @@ const Services = () => {
           Ready to take your marketing to the next level? Contact us today and
           let's make your brand shine brighter than ever before!
         </p>
-        <Button href="/" title="Let's talk" className="w-max mx-auto" />
+        <Button
+          href="mailto:buysse.tim@gmail.com"
+          title="Let's talk"
+          className="w-max mx-auto"
+        />
       </div>
     </div>
   );

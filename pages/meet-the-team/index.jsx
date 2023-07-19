@@ -78,6 +78,9 @@ const About = () => {
                     alt={"Logo"}
                     fill={done ? true : false}
                   />
+                  <div className={styles.cardHover}>
+                    <p>" {member.tagLine} "</p>
+                  </div>
                 </div>
               </motion.div>
               <div className={styles.teamInfo}>

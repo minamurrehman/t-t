@@ -8,6 +8,7 @@ import Image from "next/image";
 import NextImage from "../../images/next.svg";
 import Link from "next/link";
 import styles from "./Carousel.module.scss";
+import data from "../../utils/data.json";
 
 function PrevArrow(props) {
   const { className, style, onClick } = props;
@@ -61,54 +62,22 @@ function Carousel() {
   };
   return (
     <Slider {...settings} className="mt-16 max-w-7xl mx-auto px-4">
-      <div className="px-6">
-        <Image
-          src={Keenetic}
-          alt="Keenetic"
-          width={600}
-          height={400}
-          className="max-h-[300px] object-contain"
-        />
-        <p className="mt-4 text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <Link
-          href="/"
-          className="uppercase text-lg text-secondary text-center block my-6"
-        >
-          Learn More {">>>"}
-        </Link>
-      </div>
-      <div className="px-6">
-        <Image
-          src={Dlc}
-          alt="DLC"
-          width={600}
-          height={400}
-          className="max-h-[300px] object-contain"
-        />
-        <p className="mt-4 text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <Link
-          href="/"
-          className="uppercase text-lg text-secondary text-center block my-6"
-        >
-          Learn More {">>>"}
-        </Link>
-      </div>
+      {data?.work?.map((item, index) => (
+        <div key={index} className="px-6">
+          <Image
+            src={item?.image}
+            alt="Image"
+            width={600}
+            height={400}
+            className="max-h-[300px] object-contain"
+          />
+          <p className="mt-4 text-justify p-6">{item?.text}</p>
+          <Link
+            href="/"
+            className="uppercase text-lg text-secondary text-center block my-6"
+          ></Link>
+        </div>
+      ))}
     </Slider>
   );
 }

@@ -5,7 +5,9 @@ module.exports = {
     "./components/Hear/Hear.jsx",
     "./components/Button/Button.jsx",
     "./components/ServiceCard/ServiceCard.jsx",
+    "./components/Footer/Footer.jsx",
     "./pages/services/index.jsx",
+    "./pages/blog/index.jsx",
 
   ],
   theme: {

@@ -1,4 +1,5 @@
 @import 'variables';
+
 .footer {
   display: flex;
   align-items: center;
@@ -9,7 +10,8 @@
   @media screen and (max-width: 600px) {
     border: none;
   }
-  & > p {
+
+  &>p {
     background-color: $secondary-color;
     color: $primary-color;
     font-size: 18px;
@@ -19,6 +21,7 @@
     letter-spacing: 0.004rem;
     text-align: center;
   }
+
   .footerInner {
     display: flex;
     align-items: center;
@@ -39,20 +42,22 @@
       padding: 0;
     }
 
-    & > * {
+    &>* {
       @media screen and (max-width: 600px) {
         border-top: 4px solid $secondary-color;
         width: 100%;
         padding: 2em;
       }
     }
-    & > * > p {
+
+    &>*>p {
       color: $secondary-color;
       font-size: 20px;
       font-weight: 700;
       line-height: 32px;
     }
-    & > * > ul {
+
+    &>*>ul {
       display: flex;
       flex-direction: column;
       color: $secondary-color;
@@ -62,7 +67,8 @@
       line-height: 28.8px;
       gap: 0.8rem;
     }
-    & > * > ul > a {
+
+    &>*>ul>a {
       color: white;
       text-decoration: none;
     }
