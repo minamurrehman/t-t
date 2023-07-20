@@ -11,16 +11,20 @@
   "dependencies": {
     "@next/font": "13.0.7",
     "@react-spring/web": "^9.6.1",
+    "@vidstack/react": "^0.6.13",
     "framer-motion": "^8.0.1",
+    "media-icons": "^0.10.0",
     "next": "13.0.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-inview": "^4.5.0",
     "react-icons": "^4.7.1",
     "react-intersection-observer": "^9.4.1",
+    "react-player": "^2.12.0",
     "react-slick": "^0.29.0",
     "react-toastify": "^9.1.1",
     "slick-carousel": "^1.8.1",
+    "vidstack": "^0.6.13",
     "zod": "^3.20.6"
   },
   "devDependencies": {

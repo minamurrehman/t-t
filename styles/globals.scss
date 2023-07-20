@@ -36,3 +36,10 @@ body {
   background-color: $secondary-color !important;
   color: $primary-color !important;
 }
+
+.react-player__preview {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  width: 1300px !important;
+  height: 600px !important;
+}
