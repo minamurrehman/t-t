@@ -449,8 +449,8 @@
       "text": "We have harnessed the potential of TikTok to deliver impressive results for our clients. Our expert team has implemented cutting-edge strategies that have propelled our videos to reach millions of views and generate widespread engagement in an organic way. Through creative and captivating content creation, we have leveraged TikTok's algorithm to optimize visibility and maximize reach. Our videos have captured the attention of a vast audience, creating valuable brand exposure and driving traffic to our clients' products and services. From innovative storytelling techniques to trend-driven campaigns, we stay ahead of the curve in the dynamic world of TikTok. Our data-driven approach ensures that every video we produce is tailored to resonate with your target audience and is up to date with the latest trends. Contact us today to discuss how we can create TikTok magic for your business! Making TikTok go viral, one video at a time.",
       "social": [
         {
-          "instagram": "#",
-          "youtube": ""
+          "type": "tiktok",
+          "url": "https://www.tiktok.com/@keeneticwifi?_t=8e5YI0MJMEE&_r=1"
         }
       ]
     },
@@ -459,8 +459,8 @@
       "text": "We wield the power of web development to create captivating online experiences that leave viewers spellbound. Our enchanting websites have cast a wide net, captivating audiences and propelling businesses to new heights. With a touch of creativity and a sprinkle of technical wizardry, we craft visually stunning websites that captivate attention and engage users. Our team of web sorcerers combines cutting-edge design techniques with seamless functionality to bring your brand's story to life. From captivating landing pages to mesmerizing visuals, we conjure websites that not only look magical but also deliver a seamless user experience. Our spells include responsive design, intuitive navigation, and captivating content that keeps visitors under your brand's enchantment.",
       "social": [
         {
-          "instagram": "",
-          "youtube": ""
+          "type": "website",
+          "url": "https://sportsystems.eu/"
         }
       ]
     },
@@ -469,8 +469,16 @@
       "text": "At our Graphics Creation Studio, we are passionate about bringing your artistic ideas to life through captivating visuals. Our team of skilled artists and designers combines their expertise with a deep understanding of art to create graphics that truly resonate. With a keen eye for aesthetics and a mastery of artistic techniques, we craft stunning visuals that capture the essence of your vision. From breathtaking illustrations to visually striking branding designs, we transform concepts into impactful graphic expressions. We believe in the power of art to evoke emotions, tell stories, and make a lasting impression.",
       "social": [
         {
-          "instagram": "",
-          "youtube": ""
+          "type": "website",
+          "url": "https://www.heet.gg/"
+        },
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/@HEETGG"
+        },
+        {
+          "type": "tiktok",
+          "url": "https://www.tiktok.com/@heet_esports?_t=8e5YFni7LVK&_r=1"
         }
       ]
     },
@@ -479,8 +487,8 @@
       "text": "Persuasive Copywriting! We have mastered the art of wordsmithing and the power of persuasive copywriting to captivate audiences and drive impactful results. Our team of skilled copywriters combines creativity with strategic thinking to craft compelling messages that resonate with your target audience. With meticulous attention to detail and a deep understanding of consumer psychology, we create persuasive copy that sparks emotions, drives action, and generates tangible results. Whether it's crafting captivating website content, engaging social media posts, or attention-grabbing advertising copy, we have the expertise to deliver the right message, in the right tone, at the right time. By collaborating closely with our clients, we ensure that every word aligns with their brand voice and goals. Our words have the power to inspire, persuade, and create meaningful connections with your audience, helping you stand out in today's crowded marketplace. Where words become your most powerful marketing tool.",
       "social": [
         {
-          "instagram": "",
-          "youtube": ""
+          "type": "website",
+          "url": "https://flagship.fyi/outposts/gaming/"
         }
       ]
     },
@@ -489,20 +497,15 @@
       "text": "We specialize in crafting distinctive logos that capture the essence of your brand. We combine creativity and strategic thinking to deliver logo designs that leave a lasting impression. We understand the importance of a logo as the visual representation of your brand. That's why we delve deep into your brand's personality, values, and target audience to create a logo that stands out from the crowd. Our designs are tailor-made to reflect your unique identity, conveying professionalism, trust, and creativity. Creating logos that make a lasting impression.",
       "social": [
         {
-          "instagram": "",
-          "youtube": ""
+          "type": "instagram",
+          "url": "https://www.instagram.com/melissapopsel_mua/"
         }
       ]
     },
     {
       "image": "/youtube-work.png",
       "text": "Lights, Camera, Action! As a passionate and creative video producer, I am here to bring your vision to life on the silver screen. With years of experience and an unwavering dedication to quality, I will create captivating videos that resonate with your audience and make a lasting impact. From scriptwriting to post-production, every step of the process is carefully crafted to ensure your story shines through. I pride myself on my attention to detail, bringing out the best in every scene, capturing the essence of your brand, and evoking emotions that leave a lasting impression. Whether it's a promotional video, brand story, or creative advertisement, I understand the power of visuals and storytelling. I will work closely with you to understand your goals and bring your ideas to life, delivering videos that engage, entertain, and inspire action. Lights, camera, let's make magic together! Mr Jasur Avizov and T&T your partner in visual storytelling and video production excellence.",
-      "social": [
-        {
-          "instagram": "",
-          "youtube": ""
-        }
-      ]
+      "social": []
     }
   ]
 }
