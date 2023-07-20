@@ -50,7 +50,7 @@ const Services = () => {
           let's make your brand shine brighter than ever before!
         </p>
         <Button
-          href="mailto:buysse.tim@gmail.com"
+          href="mailto:tim@ttmarketing.be"
           title="Let's talk"
           className="w-max mx-auto"
         />

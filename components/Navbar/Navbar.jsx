@@ -76,7 +76,7 @@ const Navbar = ({ active }) => {
           </div>
           {/* Social  */}
           <div className={styles.social}>
-            <Link href="mailto:buysse.tim@gmail.com" className="button">
+            <Link href="mailto:tim@ttmarketing.be" className="button">
               Let's Talk
             </Link>
             <Link href="https://www.linkedin.com/company/tntmarketing/">

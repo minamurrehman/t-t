@@ -18,7 +18,7 @@ const Hear = () => {
           We can't wait to hear about your business aspirations and discuss how
           we can help you achieve them.
         </p>
-        <Button href="mailto:buysse.tim@gmail.com" title="Let's talk" />
+        <Button href="mailto:tim@ttmarketing.be" title="Let's talk" />
       </div>
     </section>
   );
