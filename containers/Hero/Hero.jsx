@@ -6,8 +6,9 @@ import { VscUnmute, VscMute } from "react-icons/vsc";
 
 const Hero = () => {
   const videoRef = useRef();
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
   const [isMute, setIsMute] = useState(true);
+  const [isMouse, setIsMouse] = useState(false);
 
   const videoHandler = (control) => {
     if (control === "play") {
@@ -31,34 +32,36 @@ const Hero = () => {
         className={styles.heroVideo}
         poster="/hero.png"
         muted
+        autoPlay
         ref={videoRef}
+        onMouseOver={() => setIsMouse(true)}
+        onMouseOut={() => setIsMouse(false)}
       />
       {!isPlaying ? (
         <BiPlay
           size={80}
+          onMouseEnter={() => setIsMouse(true)}
           onClick={() => videoHandler("play")}
-          className={styles.playButton}
+          className={`${styles.playButton} ${isMouse ? "block" : "hidden"}`}
         />
       ) : (
         <BiPause
           size={80}
+          onMouseEnter={() => setIsMouse(true)}
           onClick={() => videoHandler("pause")}
-          className={styles.playButton}
+          className={`${styles.playButton} ${isMouse ? "block" : "hidden"}`}
         />
       )}
-      {isMute ? (
-        <VscMute
-          size={24}
-          onClick={() => videoHandler("unmute")}
-          className={styles.muteButton}
-        />
-      ) : (
-        <VscUnmute
-          size={24}
-          onClick={() => videoHandler("mute")}
-          className={styles.muteButton}
-        />
-      )}
+      <div
+        className={`${styles.muteButton} ${isMouse ? "block" : "hidden"}`}
+        onMouseEnter={() => setIsMouse(true)}
+      >
+        {isMute ? (
+          <VscMute size={24} onClick={() => videoHandler("unmute")} />
+        ) : (
+          <VscUnmute size={24} onClick={() => videoHandler("mute")} />
+        )}
+      </div>
     </div>
   );
 };

@@ -34,15 +34,31 @@
   }
 
   .muteButton {
+    background-color: $secondary-color;
+    padding: .2em;
+    border-radius: 50%;
     position: absolute;
     bottom: 10%;
     right: 8%;
     cursor: pointer;
 
-    @media screen and (min-width:1200px) {
-      bottom: 0;
+    @media screen and (min-width:300px) {
+      bottom: 11%;
+      right: 7%;
+    }
+
+    @media screen and (min-width:1070px) {
+      bottom: 3%;
+      right: 4%;
+    }
+
+    @media screen and (min-width:1150px) {
+      bottom: -5%;
       right: 3%;
     }
+
+
+
   }
 
 }
