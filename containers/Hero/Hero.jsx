@@ -52,10 +52,7 @@ const Hero = () => {
           className={`${styles.playButton} ${isMouse ? "block" : "hidden"}`}
         />
       )}
-      <div
-        className={`${styles.muteButton} ${isMouse ? "block" : "hidden"}`}
-        onMouseEnter={() => setIsMouse(true)}
-      >
+      <div className={styles.muteButton}>
         {isMute ? (
           <VscMute size={24} onClick={() => videoHandler("unmute")} />
         ) : (
