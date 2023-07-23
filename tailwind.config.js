@@ -6,8 +6,11 @@ module.exports = {
     "./components/Button/Button.jsx",
     "./components/ServiceCard/ServiceCard.jsx",
     "./components/Footer/Footer.jsx",
+    "./components/BlogCard/BlogCard.jsx",
     "./pages/services/index.jsx",
     "./pages/blog/index.jsx",
+    "./pages/blogs/index.jsx",
+    "./pages/blogs/*",
 
   ],
   theme: {
@@ -20,6 +23,6 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography'),],
 }
 

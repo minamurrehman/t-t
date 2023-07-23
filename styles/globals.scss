@@ -43,3 +43,9 @@ body {
   width: 1300px !important;
   height: 600px !important;
 }
+
+figure>iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
