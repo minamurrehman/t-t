@@ -2,8 +2,17 @@ import React from "react";
 import { api } from "../../utils/api";
 import Image from "next/image";
 import Head from "next/head";
+import {
+  LinkedinShareButton,
+  InstapaperShareButton,
+  TwitterShareButton,
+} from "react-share";
+
+import { BsLinkedin, BsTwitter, BsInstagram } from "react-icons/bs";
+import { useRouter } from "next/router";
 
 const BlogInfo = ({ post }) => {
+  const { asPath } = useRouter();
   return (
     <>
       <Head>
@@ -16,6 +25,13 @@ const BlogInfo = ({ post }) => {
         <meta name="twitter:title" content={post?.twitter_title} />
         <meta name="twitter:description" content={post?.twitter_description} />
         <meta name="twitter:image" content={post?.twitter_image} />
+        <meta
+          name="twitter:card"
+          content={post?.twitter_description}
+          media={post?.twitter_image}
+          title={post?.twitter_title}
+        />
+
         <link rel="icon" href="/logo-black.svg" />
       </Head>
       <div className="my-8 max-w-7xl mx-auto px-4">
@@ -31,6 +47,18 @@ const BlogInfo = ({ post }) => {
           className="max-w-[900px] mx-auto prose prose-xl text-white prose-blockquote:text-secondary prose-a:text-secondary prose-code:text-secondary prose-img:mx-auto prose-img:rounded-md"
           dangerouslySetInnerHTML={{ __html: post?.html }}
         />
+        <div className="flex gap-4 max-w-4xl mx-auto my-6">
+          <p className="text-xl text-secondary">Share this post :</p>
+          <LinkedinShareButton url={`https://ttmarketing.be/${asPath}`}>
+            <BsLinkedin size={24} color="#03eeca" />
+          </LinkedinShareButton>
+          <InstapaperShareButton url={`https://ttmarketing.be/${asPath}`}>
+            <BsInstagram size={24} color="#03eeca" />
+          </InstapaperShareButton>
+          <TwitterShareButton url={`https://ttmarketing.be/${asPath}`}>
+            <BsTwitter size={24} color="#03eeca" />
+          </TwitterShareButton>
+        </div>
       </div>
     </>
   );
