@@ -49,13 +49,13 @@ const BlogInfo = ({ post }) => {
         />
         <div className="flex gap-4 max-w-4xl mx-auto my-6">
           <p className="text-xl text-secondary">Share this post :</p>
-          <LinkedinShareButton url={`https://ttmarketing.be/${asPath}`}>
+          <LinkedinShareButton url={`https://ttmarketing.be${asPath}`}>
             <BsLinkedin size={24} color="#03eeca" />
           </LinkedinShareButton>
-          <InstapaperShareButton url={`https://ttmarketing.be/${asPath}`}>
+          <InstapaperShareButton url={`https://ttmarketing.be${asPath}`}>
             <BsInstagram size={24} color="#03eeca" />
           </InstapaperShareButton>
-          <TwitterShareButton url={`https://ttmarketing.be/${asPath}`}>
+          <TwitterShareButton url={`https://ttmarketing.be${asPath}`}>
             <BsTwitter size={24} color="#03eeca" />
           </TwitterShareButton>
         </div>
