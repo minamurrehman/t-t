@@ -7,7 +7,7 @@ const BlogInfo = ({ post }) => {
   return (
     <>
       <Head>
-        <title>{post?.meta_title}</title>
+        <title>{post?.meta_title}| T& T Marketing</title>
         <meta name="description" content={post?.meta_description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content={post?.og_title} />
@@ -16,6 +16,7 @@ const BlogInfo = ({ post }) => {
         <meta name="twitter:title" content={post?.twitter_title} />
         <meta name="twitter:description" content={post?.twitter_description} />
         <meta name="twitter:image" content={post?.twitter_image} />
+        <link rel="icon" href="/logo-black.svg" />
       </Head>
       <div className="my-8 max-w-7xl mx-auto px-4">
         <h1 className="text-5xl text-center text-secondary">{post?.title}</h1>

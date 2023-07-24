@@ -13,10 +13,15 @@ const Clients = () => {
   return (
     <>
       <Head>
-        <title>Our Clients | T & T Marketing </title>
+        <title>Our Clients | T & T Marketing</title>
+        <meta
+          name="description"
+          content="We are a social media and marketing agency run by people that truly understand how digital marketing works. Our main expertise lies in industries such as gaming, technology, crypto, and esports. Our number one priority is to always deliver the best results to our clients and to ensure no stone is left unturned in achieving their goals. We’re devoted to a limited number of clients and always have someone available to handle any social media emergency. We combine professionalism and efficiency with a good sense of humor and guarantee that working with us will be a blast!"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/logo-black.svg" />
       </Head>
+
       <div className={styles.clientInfo}>
         <div>
           <Image src={Heet} alt="Heet Logo" />
