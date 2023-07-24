@@ -1,23 +1,37 @@
 import React from "react";
 import { api } from "../../utils/api";
 import Image from "next/image";
+import Head from "next/head";
 
 const BlogInfo = ({ post }) => {
   return (
-    <div className="my-8 max-w-7xl mx-auto px-4">
-      <h1 className="text-5xl text-center text-secondary">{post?.title}</h1>
-      <Image
-        src={post?.feature_image}
-        alt={post?.feature_image_alt}
-        width={900}
-        height={500}
-        className="my-8 rounded-md w-full max-w-[900px] mx-auto h-[300px] md:h-[400px] lg:h-[500px] object-cover"
-      />
-      <div
-        className="max-w-[900px] mx-auto prose prose-xl text-white prose-blockquote:text-secondary prose-a:text-secondary prose-code:text-secondary prose-img:mx-auto prose-img:rounded-md"
-        dangerouslySetInnerHTML={{ __html: post?.html }}
-      />
-    </div>
+    <>
+      <Head>
+        <title>{post?.meta_title}</title>
+        <meta name="description" content={post?.meta_description} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content={post?.og_title} />
+        <meta property="og:description" content={post?.og_description} />
+        <meta property="og:image" content={post?.og_image} />
+        <meta name="twitter:title" content={post?.twitter_title} />
+        <meta name="twitter:description" content={post?.twitter_description} />
+        <meta name="twitter:image" content={post?.twitter_image} />
+      </Head>
+      <div className="my-8 max-w-7xl mx-auto px-4">
+        <h1 className="text-5xl text-center text-secondary">{post?.title}</h1>
+        <Image
+          src={post?.feature_image}
+          alt={post?.feature_image_alt}
+          width={900}
+          height={500}
+          className="my-8 rounded-md w-full max-w-[900px] mx-auto h-[300px] md:h-[400px] lg:h-[500px] object-cover"
+        />
+        <div
+          className="max-w-[900px] mx-auto prose prose-xl text-white prose-blockquote:text-secondary prose-a:text-secondary prose-code:text-secondary prose-img:mx-auto prose-img:rounded-md"
+          dangerouslySetInnerHTML={{ __html: post?.html }}
+        />
+      </div>
+    </>
   );
 };
 

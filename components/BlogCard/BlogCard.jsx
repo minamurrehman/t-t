@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import moment from "moment/moment";
-import readingTime from "reading-time";
 import { MdOutlineTimer } from "react-icons/md";
 import Link from "next/link";
 const BlogCard = ({ blog }) => {
@@ -19,14 +18,7 @@ const BlogCard = ({ blog }) => {
           <p>{moment(blog?.published_at).format("DD MMMM YYYY")}</p>
           <p className="flex gap-1">
             <MdOutlineTimer size={24} color="#03eeca" />
-            <span>
-              {
-                readingTime(blog?.html, {
-                  wordsPerMinute: 200,
-                }).minutes
-              }{" "}
-              min
-            </span>
+            <span>{blog?.reading_time} min</span>
           </p>
         </div>
         <div className="px-8 text-center">
