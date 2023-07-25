@@ -12,6 +12,7 @@ import { BsLinkedin, BsTwitter, BsInstagram } from "react-icons/bs";
 import { useRouter } from "next/router";
 
 const BlogInfo = ({ post }) => {
+  console.log(post);
   const { asPath } = useRouter();
   return (
     <>

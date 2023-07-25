@@ -34,6 +34,7 @@ export async function getStaticProps() {
     .catch((err) => {
       console.error(err);
     });
+  console.log(blogs);
   return {
     props: { blogs },
     revalidate: 300,
