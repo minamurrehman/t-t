@@ -36,6 +36,6 @@ export async function getStaticProps() {
     });
   return {
     props: { blogs },
-    revalidate: 60 * 5,
+    revalidate: 300,
   };
 }
