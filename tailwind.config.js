@@ -9,8 +9,8 @@ module.exports = {
     "./components/BlogCard/BlogCard.jsx",
     "./pages/services/index.jsx",
     "./pages/blog/index.jsx",
-    "./pages/blogs/index.jsx",
-    "./pages/blogs/*",
+    "./pages/blog/index.jsx",
+    "./pages/blog/*",
 
   ],
   theme: {
