@@ -27,7 +27,7 @@ const BlogCard = ({ blog }) => {
           </h1>
           <p>{blog?.excerpt}</p>
           <Link
-            href={`/blogs/${blog?.slug}`}
+            href={`/blog/${blog?.slug}`}
             className="block w-max mx-auto my-4 text-2xl bg-secondary px-8 py-2 rounded-xl text-black hover:scale-105 duration-500"
           >
             Read more
