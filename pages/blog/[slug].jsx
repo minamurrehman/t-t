@@ -44,7 +44,7 @@ const BlogInfo = ({ post }) => {
           className="my-8 rounded-md w-full max-w-[900px] mx-auto h-[300px] md:h-[400px] lg:h-[500px] object-cover"
         />
         <div
-          className="max-w-[900px] mx-auto prose prose-xl text-white prose-blockquote:text-secondary prose-a:text-secondary prose-code:text-secondary prose-img:mx-auto prose-img:rounded-md"
+          className="max-w-[900px] mx-auto prose prose-xl text-white prose-blockquote:text-secondary prose-a:text-secondary prose-code:text-secondary prose-img:mx-auto prose-img:rounded-md prose-headings:font-bold prose-headings:text-secondary prose-strong:text-white prose-strong:font-bold"
           dangerouslySetInnerHTML={{ __html: post?.html }}
         />
         <div className="flex gap-4 max-w-4xl mx-auto my-6">
