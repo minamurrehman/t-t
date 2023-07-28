@@ -6,6 +6,7 @@ import Heet from "../../images/heet.png";
 import Kee from "../../images/kee.png";
 import Vibes from "../../images/vibes.png";
 import Flagship from "../../images/flagship.svg";
+import DLC from "../../images/dlc-logo.png";
 import Link from "next/link";
 import Head from "next/head";
 
@@ -98,6 +99,31 @@ const Clients = () => {
             href="https://flagship.fyi/outposts/gaming/"
           >
             Copywriting & SEO optimisation
+          </Link>
+        </div>
+      </div>
+      <div className={styles.clientInfoSecond}>
+        <div>
+          <Image
+            src={DLC}
+            alt="DLC Logo"
+            style={{
+              filter: "revert",
+              width: "200px",
+              height: "200px",
+            }}
+          />
+          <p>
+            DLC SportSystems is a leading provider of cutting-edge sports
+            technology solutions, catering to sports clubs and organizations
+            worldwide. They approached TT Marketing with the goal of
+            establishing a robust online presence through social media platforms
+            (Facebook, Instagram, and LinkedIn), content creation for their
+            website, creating impactful reels and posts, and devising a
+            comprehensive sales strategy to connect with sports clubs.
+          </p>
+          <Link className={`${styles.btn} button`} href="/clients/dlc">
+            Case Study
           </Link>
         </div>
       </div>

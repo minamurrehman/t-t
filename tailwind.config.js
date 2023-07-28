@@ -10,6 +10,7 @@ module.exports = {
     "./pages/services/index.jsx",
     "./pages/blog/index.jsx",
     "./pages/blog/index.jsx",
+    "./pages/clients/dlc.jsx",
     "./pages/blog/*",
 
   ],
