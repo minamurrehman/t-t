@@ -13,7 +13,7 @@ const Error = () => {
         className="block my-16 mx-auto"
       />
       <p className="text-3xl md:text-4xl font-bold uppercase text-center my-16">
-        Requested Page Not Found
+        Page Not Found
       </p>
     </div>
   );
