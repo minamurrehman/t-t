@@ -25,7 +25,7 @@ const BlogCard = ({ blog }) => {
           <h1 className="text-3xl font-[700] text-center text-secondary my-6">
             {blog?.title}
           </h1>
-          <p>{blog?.excerpt}</p>
+          <p className="line-clamp-3">{blog?.excerpt}</p>
           <Link
             href={`/blog/${blog?.slug}`}
             className="block w-max mx-auto my-4 text-2xl bg-secondary px-8 py-2 rounded-xl text-black hover:scale-105 duration-500"
