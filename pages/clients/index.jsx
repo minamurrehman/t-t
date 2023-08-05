@@ -25,7 +25,9 @@ const Clients = () => {
         <link rel="icon" href="/logo-black.svg" />
       </Head>
 
-            <Carousel data={clients} type="clients"/>
+          <div className="my-8">
+              <Carousel data={clients} type="clients"/>
+          </div>
 
       {/*<div className={styles.clientInfo}>*/}
       {/*  {*/}

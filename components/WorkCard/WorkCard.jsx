@@ -5,7 +5,7 @@ import {BsGlobe, BsInstagram, BsTiktok, BsYoutube} from "react-icons/bs";
 
 const WorkCard = ({item}) => {
     return (
-        <div className="px-6">
+        <div className="md:px-6 mx-6">
             <Image
                 src={item?.image}
                 alt="Image"
@@ -13,7 +13,7 @@ const WorkCard = ({item}) => {
                 height={400}
                 className="max-h-[300px] object-contain"
             />
-            <p className="mt-4 text-justify p-6">{item?.text}</p>
+            <p className="mt-4 text-justify md:p-6 py-4">{item?.text}</p>
             <div className="flex gap-4 px-6 justify-center">
                 {item?.social?.map((sc) => {
                     if (sc.type === "website") {

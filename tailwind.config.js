@@ -4,6 +4,7 @@ module.exports = {
     "./components/Slider/Carousel.jsx",
     "./components/ClientCard/ClientCard.jsx",
     "./components/ServiceCard/ServiceCard.jsx",
+    "./components/WorkCard/WorkCard.jsx",
     "./components/Hear/Hear.jsx",
     "./components/Button/Button.jsx",
     "./components/ServiceCard/ServiceCard.jsx",

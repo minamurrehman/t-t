@@ -1,6 +1,5 @@
 import React from "react";
 import { api } from "../../utils/api";
-import BlogCard from "../../components/BlogCard/BlogCard";
 import Head from "next/head";
 import Carousel from "../../components/Slider/Carousel";
 
