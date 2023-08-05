@@ -1,93 +1,39 @@
 .clientInfo {
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+  flex-wrap: wrap;
   max-width: 1200px;
   margin: 4rem auto 1rem auto;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 4rem;
   padding: 2rem;
 
-  @media screen and (max-width: 600px) {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-    border: none;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
   }
 
-  &>* {
-    max-width: 530px;
-    text-align: justify;
+  .logoImageConatiner{
+    position: relative;
+    object-fit: cover;
+    margin: 1em auto;
   }
 
-  &> :nth-child(1)> :nth-child(1) {
-    width: 160px;
-    height: 150px;
+  .logoImage{
+    position: absolute;
+  }
+
+  .content{
+    text-align: center;
+    min-height: 8rem;
+    padding: .4em;
     display: block;
-    margin: 1rem auto;
-  }
-
-  &> :nth-child(2) {
-    margin-top: 4rem;
-  }
-
-  &> :nth-child(2)> :nth-child(1) {
-    width: 100%;
-    max-width: 100%;
-    height: 80px;
-    display: block;
-    margin: 1rem auto;
+    margin-bottom: 1rem;
   }
 
   .btn {
     max-width: max-content;
     padding: 0.5rem 2rem;
-    margin: 3rem auto;
-  }
-}
-
-.clientInfoSecond {
-  display: flex;
-  align-items: flex-start;
-  max-width: 1200px;
-  margin: 1rem auto;
-  justify-content: space-between;
-  gap: 2rem;
-  padding: 2rem;
-
-  @media screen and (max-width: 600px) {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-    border: none;
-  }
-
-  &>* {
-    max-width: 530px;
-    text-align: justify;
-  }
-
-  &> :nth-child(1)> :nth-child(1) {
-    width: 250px;
-    height: 60px;
-    display: block;
     margin: 1rem auto;
-  }
-
-  &> :nth-child(2) {
-    margin-top: .8rem;
-  }
-
-  &> :nth-child(2)> :nth-child(1) {
-    width: 100%;
-    max-width: 100%;
-    height: 80px;
-    display: block;
-    margin: 1rem auto;
-  }
-
-  .btn {
-    max-width: max-content;
-    padding: 0.5rem 2rem;
-    margin: 3rem auto;
   }
 }

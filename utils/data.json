@@ -507,5 +507,52 @@
       "text": "Lights, Camera, Action! As a passionate and creative video producer, I am here to bring your vision to life on the silver screen. With years of experience and an unwavering dedication to quality, I will create captivating videos that resonate with your audience and make a lasting impact. From scriptwriting to post-production, every step of the process is carefully crafted to ensure your story shines through. I pride myself on my attention to detail, bringing out the best in every scene, capturing the essence of your brand, and evoking emotions that leave a lasting impression. Whether it's a promotional video, brand story, or creative advertisement, I understand the power of visuals and storytelling. I will work closely with you to understand your goals and bring your ideas to life, delivering videos that engage, entertain, and inspire action. Lights, camera, let's make magic together! Mr Jasur Avizov and T&T your partner in visual storytelling and video production excellence.",
       "social": []
     }
+  ],
+  "clients": [
+    {
+      "id": 1,
+      "image": "/heet.png",
+      "desc": "HEET Gaming is a premier gaming community that is dedicated to providing an exciting experience for gamers. HEET competes in numerous games at the highest levels, including being in the top 30 world-wide in the game of Counter-Strike. Members are known for their competitive spirit and love of the game.",
+      "url": "/clients/heet",
+      "width": 120,
+      "height": 120,
+      "buttonText": "Case Study"
+    },
+    {
+      "id": 2,
+      "image": "/kee.png",
+      "desc": "Keenetic is an ambitious and innovative designer, developer & vendor, focused on Wi-Fi routers. They deliver commercially useful cutting-edge Wi-Fi router performance. Since 2010 several dozen models have been launched, and the number of users of the brand has exceeded seven million cross Europe.",
+      "url": "/clients/keenetic",
+      "width": "50%",
+      "height": 50,
+      "buttonText": "Case Study"
+    },
+    {
+      "id": 3,
+      "image": "/vibes.png",
+      "desc": "Running Vibes is a Website for runners by runners.We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts, healthy recipes and informative articles, as well as one of the most positive communities on the web, you’ll have everything you need to reach your personal fitness goals – for free!",
+      "url": "https://running-vibes.vercel.app/",
+      "width": "50%",
+      "height": 50,
+      "buttonText": "Website Creation"
+    },
+    {
+      "id": 4,
+      "image": "/flagship.svg",
+      "desc": "We’re bringing all your crypto needs together under one roof. Whether it’s assets, information, data, experts or education, Flagship is here to help you! In Gaming outpost! In here, we discuss everything about Web3 Gaming - from Play-to-Earn games to NFT gaming projects.",
+      "url": "",
+      "width": "80%",
+      "height": "3rem",
+      "buttonText": "Copywriting & SEO Optimization"
+    },
+    {
+      "id": 5,
+      "image": "/dlc-logo.png",
+      "desc": "DLC SportSystems is a leading provider of cutting-edge sports technology solutions, catering to sports clubs and organizations worldwide. They approached TT Marketing with the goal of establishing a robust online presence through social media platforms (Facebook, Instagram, and LinkedIn), content creation for their website.",
+      "url": "https://flagship.fyi/outposts/gaming/",
+      "width": 150,
+      "height": 120,
+      "buttonText": "Case Study"
+    }
   ]
 }

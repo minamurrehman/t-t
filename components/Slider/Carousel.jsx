@@ -8,14 +8,17 @@ import Image from "next/image";
 import NextImage from "../../images/next.svg";
 import Link from "next/link";
 import styles from "./Carousel.module.scss";
-import data from "../../utils/data.json";
+
 import { BsGlobe, BsInstagram, BsTiktok, BsYoutube } from "react-icons/bs";
+import WorkCard from "../WorkCard/WorkCard";
+import ClientCard from "../ClientCard/ClientCard";
+import BlogCard from "../BlogCard/BlogCard";
 
 function PrevArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className="block w-10 h-10 absolute rotate-180 left-0 top-1/2 cursor-pointer transform  -translate-y-1/2 ml-2"
+      className="block w-10 h-10 absolute rotate-180 left-0 top-1/2 cursor-pointer transform z-50 -translate-y-1/2 ml-2"
       onClick={onClick}
     >
       <Image src={NextImage} alt="Next Arrow" width={40} height={40} />
@@ -26,7 +29,7 @@ function NextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className="block w-10 h-10 absolute right-0 top-1/2 cursor-pointer transform -translate-y-1/2 mr-2"
+      className="block w-10 h-10 absolute right-0 top-1/2 cursor-pointer transform z-50 -translate-y-1/2 mr-2"
       onClick={onClick}
     >
       <Image src={NextImage} alt="Next Arrow" width={40} height={40} />
@@ -34,7 +37,7 @@ function NextArrow(props) {
   );
 }
 
-function Carousel() {
+function Carousel({data,type}) {
   var settings = {
     infinite: true,
     slidesToShow: 2,
@@ -62,50 +65,9 @@ function Carousel() {
     prevArrow: <PrevArrow />,
   };
   return (
-    <Slider {...settings} className="mt-16 max-w-7xl mx-auto px-4">
-      {data?.work?.map((item, index) => (
-        <div key={index} className="px-6">
-          <Image
-            src={item?.image}
-            alt="Image"
-            width={600}
-            height={400}
-            className="max-h-[300px] object-contain"
-          />
-          <p className="mt-4 text-justify p-6">{item?.text}</p>
-          <div className="flex gap-4 px-6 justify-center">
-            {item?.social?.map((sc) => {
-              if (sc.type === "website") {
-                return (
-                  <Link href={sc.url}>
-                    <BsGlobe size={24} color="#03eeca" />
-                  </Link>
-                );
-              }
-              if (sc.type === "youtube") {
-                return (
-                  <Link href={sc.url}>
-                    <BsYoutube size={24} color="#03eeca" />
-                  </Link>
-                );
-              }
-              if (sc.type === "tiktok") {
-                return (
-                  <Link href={sc.url}>
-                    <BsTiktok size={24} color="#03eeca" />
-                  </Link>
-                );
-              }
-              if (sc.type === "instagram") {
-                return (
-                  <Link href={sc.url}>
-                    <BsInstagram size={24} color="#03eeca" />
-                  </Link>
-                );
-              }
-            })}
-          </div>
-        </div>
+    <Slider {...settings} className={`mt-16 max-w-7xl mx-auto px-8 ${type==="clients" && "s2"}`}>
+      {data?.map((item, index) => (
+       type === "work" ?  <WorkCard item={item} key={index}/> : type==="clients"? <ClientCard item={item} key={index}/>: <BlogCard blog={item} key={index} />
       ))}
     </Slider>
   );

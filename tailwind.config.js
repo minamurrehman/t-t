@@ -2,6 +2,8 @@
 module.exports = {
   content: [
     "./components/Slider/Carousel.jsx",
+    "./components/ClientCard/ClientCard.jsx",
+    "./components/ServiceCard/ServiceCard.jsx",
     "./components/Hear/Hear.jsx",
     "./components/Button/Button.jsx",
     "./components/ServiceCard/ServiceCard.jsx",

@@ -49,3 +49,12 @@ figure>iframe {
   height: auto;
   aspect-ratio: 16/9;
 }
+
+.s2 .slick-list .slick-track .slick-slide > div {
+  display: grid;
+  place-items: center;
+  height: 500px;
+  @media screen and (max-width: 400px) {
+    height: 700px;
+  }
+}

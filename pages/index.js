@@ -1,14 +1,16 @@
 import Head from 'next/head'
-import { Bai_Jamjuree } from '@next/font/google'
 import Hero from '../containers/Hero/Hero'
 import Type from '../components/Type/Type'
 import styles from "../styles/home.module.scss"
 import Carousel from '../components/Slider/Carousel'
 import Hear from '../components/Hear/Hear'
+import {work,clients} from "../utils/data.json"
+import {api} from "../utils/api";
 
 
 
-export default function Home() {
+
+export default function Home({blogs}) {
   return (
     <>
       <Head>
@@ -70,20 +72,43 @@ export default function Home() {
           <Social />
         </div> */}
 
-        {/* Carousel  */}
+        {/* CarouselBlogs  */}
         <div className={styles.carouselContainer}>
           <p className={styles.heading}>
             Previous Works
           </p>
-          <Carousel />
+          <Carousel data={work} type="work" />
         </div>
-        {/* <div>
-          <Clients />
-        </div> */}
+        <div className={styles.carouselContainerBlack}>
+          <p className={styles.heading}>
+            Our Clients
+          </p>
+          <Carousel data={clients} type="clients"/>
+        </div>
+        <div className={styles.carouselContainer}>
+          <p className={styles.heading}>
+            From Blogs
+          </p>
+          <Carousel data={blogs} type="blogs"/>
+        </div>
         <div className={styles.hear}>
           <Hear />
         </div>
       </main>
     </>
   )
+}
+export async function getStaticProps() {
+  const blogs = await api.posts
+      .browse({
+        limit: "6",
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  console.log(blogs);
+  return {
+    props: { blogs },
+    revalidate: 300,
+  };
 }

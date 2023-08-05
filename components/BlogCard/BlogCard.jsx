@@ -5,7 +5,7 @@ import { MdOutlineTimer } from "react-icons/md";
 import Link from "next/link";
 const BlogCard = ({ blog }) => {
   return (
-    <div className="rounded-2xl overflow-hidden max-w-[530px] border-2 border-secondary">
+    <div className="rounded-2xl overflow-hidden max-w-[450px] md:max-w-[350px] lg:max-w-[450px] xl:max-w-[530px] mx-auto border-2 border-secondary">
       <Image
         src={blog?.feature_image}
         alt={blog?.feature_image_alt}
@@ -21,8 +21,8 @@ const BlogCard = ({ blog }) => {
             <span>{blog?.reading_time} min</span>
           </p>
         </div>
-        <div className="px-8 text-center">
-          <h1 className="text-3xl font-[700] text-center text-secondary my-6">
+        <div className="px-2 md:px-8 text-center">
+          <h1 className="text-3xl font-[700] text-center text-secondary my-6 line-clamp-4">
             {blog?.title}
           </h1>
           <p className="line-clamp-3">{blog?.excerpt}</p>
