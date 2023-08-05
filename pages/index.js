@@ -79,18 +79,18 @@ export default function Home({blogs}) {
           </p>
           <Carousel data={work} type="work" />
         </div>
-        <div className={styles.carouselContainerBlack}>
-          <p className={styles.heading}>
-            Our Clients
-          </p>
-          <Carousel data={clients} type="clients"/>
-        </div>
-        <div className={styles.carouselContainer}>
-          <p className={styles.heading}>
-            From Blogs
-          </p>
-          <Carousel data={blogs} type="blogs"/>
-        </div>
+        {/*<div className={styles.carouselContainerBlack}>*/}
+        {/*  <p className={styles.heading}>*/}
+        {/*    Our Clients*/}
+        {/*  </p>*/}
+        {/*  <Carousel data={clients} type="clients"/>*/}
+        {/*</div>*/}
+        {/*<div className={styles.carouselContainer}>*/}
+        {/*  <p className={styles.heading}>*/}
+        {/*    From Blogs*/}
+        {/*  </p>*/}
+        {/*  <Carousel data={blogs} type="blogs"/>*/}
+        {/*</div>*/}
         <div className={styles.hear}>
           <Hear />
         </div>

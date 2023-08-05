@@ -2,6 +2,7 @@ import React from "react";
 import { api } from "../../utils/api";
 import BlogCard from "../../components/BlogCard/BlogCard";
 import Head from "next/head";
+import Carousel from "../../components/Slider/Carousel";
 
 const Blog = ({ blogs }) => {
   return (
@@ -15,11 +16,14 @@ const Blog = ({ blogs }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo-black.svg" />
       </Head>
-      <div className="max-w-7xl mx-auto grid grid-cols-1 gap-10 md:grid-cols-2 my-12 px-4 place-items-center">
-        {blogs.map((blog) => {
-          return <BlogCard blog={blog} />;
-        })}
-      </div>
+      {/*<div className="max-w-7xl mx-auto grid grid-cols-1 gap-10 md:grid-cols-2 my-12 px-4 place-items-center">*/}
+      {/*  {blogs.map((blog) => {*/}
+      {/*    return <BlogCard blog={blog} />;*/}
+      {/*  })}*/}
+      {/*</div>*/}
+       <div className="my-16">
+           <Carousel data={blogs} type="blogs"/>
+       </div>
     </>
   );
 };
@@ -34,7 +38,6 @@ export async function getStaticProps() {
     .catch((err) => {
       console.error(err);
     });
-  console.log(blogs);
   return {
     props: { blogs },
     revalidate: 300,

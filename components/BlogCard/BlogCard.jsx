@@ -5,7 +5,7 @@ import { MdOutlineTimer } from "react-icons/md";
 import Link from "next/link";
 const BlogCard = ({ blog }) => {
   return (
-    <div className="rounded-2xl overflow-hidden max-w-[450px] md:max-w-[350px] lg:max-w-[450px] xl:max-w-[530px] mx-auto border-2 border-secondary">
+    <div className="rounded-2xl overflow-hidden max-w-[450px] mx-6 md:max-w-[350px] lg:max-w-[450px] xl:max-w-[530px] sm:mx-auto border-2 border-secondary">
       <Image
         src={blog?.feature_image}
         alt={blog?.feature_image_alt}
