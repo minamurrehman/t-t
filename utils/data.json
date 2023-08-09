@@ -506,6 +506,20 @@
       "image": "/youtube-work.png",
       "text": "Lights, Camera, Action! As a passionate and creative video producer, I am here to bring your vision to life on the silver screen. With years of experience and an unwavering dedication to quality, I will create captivating videos that resonate with your audience and make a lasting impact. From scriptwriting to post-production, every step of the process is carefully crafted to ensure your story shines through. I pride myself on my attention to detail, bringing out the best in every scene, capturing the essence of your brand, and evoking emotions that leave a lasting impression. Whether it's a promotional video, brand story, or creative advertisement, I understand the power of visuals and storytelling. I will work closely with you to understand your goals and bring your ideas to life, delivering videos that engage, entertain, and inspire action. Lights, camera, let's make magic together! Mr Jasur Avizov and T&T your partner in visual storytelling and video production excellence.",
       "social": []
+    },
+    {
+      "image": "/dlc-keenetic.png",
+      "text": "For DLC and KEENETIC we tapped into the power of social media platforms to reach Gen Z and sports enthusiasts. Through Twitter, Facebook, TikTok, and Instagram, we embraced the latest trends and engaged with our target audiences like never before. For KEENETIC, we created a seamless connection with Gen Z, capturing their attention and loyalty. With DLC, our focus on sports-related content garnered immense interest, driving increased brand visibility and engagement. Our expert team knows how to harness the potential of each platform, ensuring your brand stays ahead of the game in today's dynamic digital landscape. Let's elevate your marketing strategy together!",
+      "social": [
+        {
+          "type": "instagram",
+          "url": "https://www.instagram.com/dlcsportsystems/"
+        },
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/KEENETIC_WIFI"
+        }
+      ]
     }
   ],
   "clients": [
@@ -550,6 +564,15 @@
       "image": "/dlc-logo.png",
       "desc": "DLC SportSystems is a leading provider of cutting-edge sports technology solutions, catering to sports clubs and organizations worldwide. They approached TT Marketing with the goal of establishing a robust online presence through social media platforms (Facebook, Instagram, and LinkedIn), content creation for their website.",
       "url": "/clients/dlc",
+      "width": 150,
+      "height": 120,
+      "buttonText": "Case Study"
+    },
+    {
+      "id": 6,
+      "image": "/kom-op-tegen-logo.png",
+      "desc": "Kom Op Tegen Kanker, a leading cancer research and support organization, partnered with a marketing consultancy firm to expand its reach within the gaming community and run successful campaigns with influencers. The objective was to engage the gaming audience, raise awareness about cancer prevention, and drive donations for cancer research.",
+      "url": "/clients/kom-op-tegen",
       "width": 150,
       "height": 120,
       "buttonText": "Case Study"

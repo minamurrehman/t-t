@@ -14,6 +14,7 @@ module.exports = {
     "./pages/blog/index.jsx",
     "./pages/blog/index.jsx",
     "./pages/clients/dlc.jsx",
+    "./pages/clients/kom-op-tegen.jsx",
     "./pages/blog/*",
 
   ],
