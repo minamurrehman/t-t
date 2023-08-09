@@ -32,7 +32,7 @@ drive donations for cancer research.
             </p>
           </div>
 
-          <div className="relative w-64 lg:w-80 aspect-video block object-contain">
+          <div className="relative w-64 h-64 block object-contain">
             <Image
               src="/kom-op-tegen-logo.png"
               alt="Kom Op Tegen Kanker logo"
