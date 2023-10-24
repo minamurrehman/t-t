@@ -65,7 +65,7 @@ const Navbar = ({ active }) => {
             {data?.menu?.map((item, index) => (
               <Link
                 className={
-                  active === item?.url.split("/")[1] ? styles.active : null
+                  item?.url.startsWith('https') ? null : active === item?.url.split('/')[1] ? styles.active : null
                 }
                 key={index}
                 href={item?.url}
