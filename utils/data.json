@@ -580,6 +580,15 @@
       "width": 150,
       "height": 120,
       "buttonText": "Case Study"
+    },
+    {
+      "id": 7,
+      "image": "/leerstadion_logo_white.svg",
+      "desc": "Het Leerstadion, an educational services provider, sought to enhance its digital presence and reach a wider audience. Collaborating with T&T Marketing, they embarked on an ambitious digital marketing campaign to revamp their brand, engage with parents, and forge partnerships with professionals in the educational sector.This case study delves into the strategies and tactics implemented by T&T Marketing, showcasing how Het Leerstadion achieved remarkable results through digital transformation.",
+      "url": "/clients/het-leerstadion",
+      "width": 150,
+      "height": 180,
+      "buttonText": "Case Study"
     }
   ]
 }

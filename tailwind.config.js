@@ -15,8 +15,8 @@ module.exports = {
     "./pages/blog/index.jsx",
     "./pages/clients/dlc.jsx",
     "./pages/clients/kom-op-tegen.jsx",
+    "./pages/clients/het-leerstadion.jsx",
     "./pages/blog/*",
-
   ],
   theme: {
     extend: {
@@ -28,6 +28,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/typography'),],
-}
-
+  plugins: [require("@tailwindcss/typography")],
+};
