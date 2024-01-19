@@ -129,9 +129,7 @@ const Dlc = () => {
                 Strategy and implementation
               </p>
               <div className="flex flex-col gap-2">
-                <p>
-                  T&T Marketing employed a approach to address Het challenges.
-                </p>
+                <p>T&T Marketing employed a approach to address challenges.</p>
                 <span className="font-bold">Social Media :</span>
                 <p>
                   T&T Marketing revamped Het Leerstadion's social media profiles

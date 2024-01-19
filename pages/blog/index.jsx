@@ -1,5 +1,4 @@
 import React from "react";
-import { api } from "../../utils/api";
 import Head from "next/head";
 import Carousel from "../../components/Slider/Carousel";
 
@@ -15,14 +14,14 @@ const Blog = ({ blogs }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo-black.svg" />
       </Head>
-      {/*<div className="max-w-7xl mx-auto grid grid-cols-1 gap-10 md:grid-cols-2 my-12 px-4 place-items-center">*/}
+      {/*<div className="grid grid-cols-1 gap-10 px-4 mx-auto my-12 max-w-7xl md:grid-cols-2 place-items-center">*/}
       {/*  {blogs.map((blog) => {*/}
       {/*    return <BlogCard blog={blog} />;*/}
       {/*  })}*/}
       {/*</div>*/}
-       <div className="my-16">
-           <Carousel data={blogs} type="blogs"/>
-       </div>
+      <div className="my-16">
+        <Carousel data={blogs} type="blogs" />
+      </div>
     </>
   );
 };
@@ -30,15 +29,35 @@ const Blog = ({ blogs }) => {
 export default Blog;
 
 export async function getStaticProps() {
-  const blogs = await api.posts
-    .browse({
-      limit: "6",
-    })
-    .catch((err) => {
-      console.error(err);
-    });
+  const data = await fetch(
+    "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clrkoehe9000008lh97edhsg1/master",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        query: `
+        query Posts {
+          posts {
+            title
+            slug
+            content {
+              html
+            }
+            coverImage {
+              url
+            }
+          }
+        }        
+        `,
+      }),
+    }
+  ).then((res) => res.json());
+
   return {
-    props: { blogs },
-    revalidate: 300,
+    props: { blogs: data?.data?.posts },
+    // 30 days muliiplication
+    revalidate: 30 * 24 * 60 * 60,
   };
 }

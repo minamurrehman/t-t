@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const path = require('path')
+const path = require("path");
 
 const nextConfig = {
   reactStrictMode: true,
@@ -7,11 +7,15 @@ const nextConfig = {
     ANALYTICS_ID: process.env.GOOGLE_ANALYTICS,
   },
   sassOptions: {
-    includePaths: [path.join(__dirname, 'styles')],
+    includePaths: [path.join(__dirname, "styles")],
   },
   images: {
-    domains: ["cms.thecodingsolution.com", "images.unsplash.com"]
-  }
-}
+    domains: [
+      "cms.thecodingsolution.com",
+      "images.unsplash.com",
+      "media.graphassets.com",
+    ],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

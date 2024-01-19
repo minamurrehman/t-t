@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 const KomOpTegen = () => {
   return (
@@ -19,20 +20,20 @@ drive donations for cancer research.
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo-black.svg" />
       </Head>
-      <div className="max-w-7xl mx-auto my-16 ">
+      <div className="mx-auto my-16 max-w-7xl ">
         {/* top bar  */}
         <div className="grid grid-cols-1 justify-items-center items-center md:grid-cols-3 gap-6 md:justify-items-end p-4 bg-[url('/kom-op-tegen.webp')] bg-no-repeat bg-cover bg-[center_bottom_80%]">
           <div className="flex flex-col gap-6 md:col-span-2 max-w-[600px] justify-self-start text-center mx-auto md:mx-0">
             <h1 className="text-2xl md:text-5xl font-bold max-w-[500px] mx-auto uppercase">
               Total Marketing Strategy
             </h1>
-            <p className="text-xl md:text-3xl uppercase">
+            <p className="text-xl uppercase md:text-3xl">
               FROM SOCIALS TO SEA, SEO, CONTENT CREATION, SALES STRATEGY TO
               SALES EXECUTION AND EFFECTIVE SALES
             </p>
           </div>
 
-          <div className="relative w-64 h-64 block object-contain">
+          <div className="relative block object-contain w-64 h-64">
             <Image
               src="/kom-op-tegen-logo.png"
               alt="Kom Op Tegen Kanker logo"
@@ -43,11 +44,11 @@ drive donations for cancer research.
 
         {/* bottom part  */}
 
-        <div className="flex flex-col-reverse md:flex-row gap-6">
+        <div className="flex flex-col-reverse gap-6 md:flex-row">
           {/* sidebar  */}
-          <div className="flex flex-col justify-around w-full md:w-72 flex-shrink-0 bg-secondary p-4 md:p-2 text-black">
+          <div className="flex flex-col justify-around flex-shrink-0 w-full p-4 text-black md:w-72 bg-secondary md:p-2">
             <div>
-              <h2 className="text-black uppercase font-bold tracking-wider">
+              <h2 className="font-bold tracking-wider text-black uppercase">
                 Increased Awareness
               </h2>
               <p>
@@ -56,7 +57,7 @@ drive donations for cancer research.
               </p>
             </div>
             <div>
-              <h2 className="text-black uppercase font-bold tracking-wider">
+              <h2 className="font-bold tracking-wider text-black uppercase">
                 Engagement Surge
               </h2>
               <p>
@@ -66,7 +67,7 @@ drive donations for cancer research.
               </p>
             </div>
             <div>
-              <h2 className="text-black uppercase font-bold tracking-wider">
+              <h2 className="font-bold tracking-wider text-black uppercase">
                 Duration Uplift
               </h2>
               <p>
@@ -76,7 +77,7 @@ drive donations for cancer research.
               </p>
             </div>
             <div>
-              <h2 className="text-black uppercase font-bold tracking-wider">
+              <h2 className="font-bold tracking-wider text-black uppercase">
                 Brand Affinity
               </h2>
               <p>
@@ -86,9 +87,9 @@ drive donations for cancer research.
               </p>
             </div>
           </div>
-          <div className="my-4 flex flex-col gap-4 px-4">
+          <div className="flex flex-col gap-4 px-4 my-4">
             <div className="flex flex-col gap-2">
-              <p className="font-bold text-xl md:text-2xl">Client Overview</p>
+              <p className="text-xl font-bold md:text-2xl">Client Overview</p>
               <p>
                 Kom Op Tegen Kanker, a leading cancer research and support
                 organization, partnered with a marketing consultancy firm to
@@ -99,7 +100,7 @@ drive donations for cancer research.
               </p>
             </div>
             <div className="flex flex-col gap-2">
-              <p className="font-bold text-xl md:text-2xl">Challenges</p>
+              <p className="text-xl font-bold md:text-2xl">Challenges</p>
               <p>
                 The gaming community, predominantly consisting of Generation Z
                 and Millennials, presents a unique challenge for traditional
@@ -110,7 +111,7 @@ drive donations for cancer research.
               </p>
             </div>
             <div className="flex flex-col gap-2">
-              <p className="font-bold text-xl md:text-2xl">Strategy</p>
+              <p className="text-xl font-bold md:text-2xl">Strategy</p>
               <p className="gap-2">
                 <span className="font-bold">Influencer Identification:</span>{" "}
                 The consultancy team conducted thorough research to identify
@@ -144,7 +145,7 @@ drive donations for cancer research.
               </p>
             </div>
             <div className="flex flex-col gap-2">
-              <p className="font-bold text-xl md:text-2xl">Execution</p>
+              <p className="text-xl font-bold md:text-2xl">Execution</p>
               <p className="gap-2">
                 <span className="font-bold">Influencer Onboarding:</span>{" "}
                 Influencers were introduced to Kom Op Tegen Kanker's mission and
@@ -169,7 +170,7 @@ drive donations for cancer research.
               </p>
             </div>
             <div className="flex flex-col gap-2">
-              <p className="font-bold text-xl md:text-2xl">Conclusion</p>
+              <p className="text-xl font-bold md:text-2xl">Conclusion</p>
               <p>
                 By combining the power of gaming influencers and tailored
                 content, Kom Op Tegen Kanker successfully engaged the gaming
@@ -191,3 +192,10 @@ drive donations for cancer research.
 };
 
 export default KomOpTegen;
+
+export async function getServerSideProps() {
+  // navigate back to home page
+  return {
+    notFound: true,
+  };
+}
