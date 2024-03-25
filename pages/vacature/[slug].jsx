@@ -36,7 +36,7 @@ const BlogInfo = ({ job }) => {
       </Head>
       <div className="px-4 mx-auto my-8 max-w-7xl">
         <h1 className="text-5xl text-secondary my-4 underline">
-          Gezocht: {job?.jobTitle}
+          Gezocht: {job?.jobTitle}({job?.jobMeta})
         </h1>
         <div
           className="mx-auto prose-xl text-white prose-blockquote:text-secondary prose-a:text-secondary prose-code:text-secondary prose-img:mx-auto prose-img:rounded-md prose-headings:font-bold prose-headings:text-secondary prose-strong:text-secondary prose-strong:font-bold"
