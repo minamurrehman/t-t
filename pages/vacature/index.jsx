@@ -28,7 +28,7 @@ export async function getStaticProps() {
       body: JSON.stringify({
         query: `
             query Jobs {
-                jobs {
+                jobs(stage: PUBLISHED) {
                     jobTitle
                     jobMeta
                     image {

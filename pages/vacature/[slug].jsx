@@ -12,10 +12,11 @@ import { useRouter } from "next/router";
 
 const BlogInfo = ({ job }) => {
   const { asPath } = useRouter();
+  const title = job?.jobTitle.concat(" | T& T Marketing");
   return (
     <>
       <Head>
-        <title>{job?.jobTitle} | T& T Marketing</title>
+        <title>{title}</title>
         <meta name="description" content={job?.jobMeta} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content={job?.jobTitle} />
@@ -100,7 +101,7 @@ export async function getStaticProps(context) {
       body: JSON.stringify({
         query: `
         query Job($slug: String!) {
-          job(where: {slug: $slug}) {
+          job(where: {slug: $slug},stage: PUBLISHED) {
              jobTitle
             jobMeta
             description {

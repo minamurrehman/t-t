@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 const JobCard = ({ job }) => {
-  console.log(job);
   return (
     <div className="rounded-2xl overflow-hidden sm:max-w-[350px] mx-6 md:max-w-[350px] xl:max-w-[400px] sm:mx-auto border-2 border-secondary">
       <div className="relative w-full h-72">
