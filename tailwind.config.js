@@ -10,6 +10,7 @@ module.exports = {
     "./components/ServiceCard/ServiceCard.jsx",
     "./components/Footer/Footer.jsx",
     "./components/BlogCard/BlogCard.jsx",
+    "./components/JobCard/JobCard.jsx",
     "./pages/services/index.jsx",
     "./pages/blog/index.jsx",
     "./pages/blog/index.jsx",
@@ -17,6 +18,7 @@ module.exports = {
     "./pages/clients/kom-op-tegen.jsx",
     "./pages/clients/het-leerstadion.jsx",
     "./pages/blog/*",
+    "./pages/vacature/*",
   ],
   theme: {
     extend: {
