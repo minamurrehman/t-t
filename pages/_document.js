@@ -6,7 +6,7 @@ export default function Document() {
     <Html lang='en'>
       <Head/>
       <body>
-        <GoogleTagManager gtmId='GTM-PXTJWWWR'/>
+        <GoogleTagManager gtmId='G-JZZNCJZKSS'/>
         <Main />
         <NextScript />
       </body>
