@@ -36,20 +36,6 @@ export default function App({ Component, pageProps }) {
         src="//js-eu1.hs-scripts.com/27183448.js"
       ></Script>
       {/* <!-- End of HubSpot Embed Code --> */}
-
-      <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.ANALYTICS_ID}`}
-      />
-      <Script id="ga-script" strategy="afterInteractive">
-        {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', '${process.env.ANALYTICS_ID}');
-          `}
-      </Script>
       <Navbar active={active} />
       <Component {...pageProps} />
       <ToastContainer />
