@@ -27,15 +27,6 @@ export default function App({ Component, pageProps }) {
         color: "white",
       }}
     >
-      {/* <!-- Start of HubSpot Embed Code --> */}
-      <Script
-        type="text/javascript"
-        id="hs-script-loader"
-        async
-        defer
-        src="//js-eu1.hs-scripts.com/27183448.js"
-      ></Script>
-      {/* <!-- End of HubSpot Embed Code --> */}
       <Navbar active={active} />
       <Component {...pageProps} />
       <ToastContainer />
